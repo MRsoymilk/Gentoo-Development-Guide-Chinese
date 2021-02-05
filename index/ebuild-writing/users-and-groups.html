@@ -1,0 +1,2348 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>用户和组 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="messages.html" />
+    
+    
+    <link rel="prev" href="error-handling.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    内容
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../quickstart-ebuild-guide.html">
+            
+                <a href="../quickstart-ebuild-guide.html">
+            
+                    
+                    Ebuild 快速入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../general-concepts/">
+            
+                <a href="../general-concepts/">
+            
+                    
+                    一般概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Ebuild 书写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../ebuild-maintenance/">
+            
+                <a href="../ebuild-maintenance/">
+            
+                    
+                    Ebuild 维护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../eclass-writing-guide.html">
+            
+                <a href="../eclass-writing-guide.html">
+            
+                    
+                    Eclass 书写指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../profiles/">
+            
+                <a href="../profiles/">
+            
+                    
+                    个人文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../keywording-and-stabilization.html">
+            
+                <a href="../keywording-and-stabilization.html">
+            
+                    
+                    关键字和稳定化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../tasks-reference/">
+            
+                <a href="../tasks-reference/">
+            
+                    
+                    任务参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../function-reference/">
+            
+                <a href="../function-reference/">
+            
+                    
+                    函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.10" data-path="../eclass-reference/">
+            
+                <a href="../eclass-reference/">
+            
+                    
+                    Eclass 参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="../tools-reference/">
+            
+                <a href="../tools-reference/">
+            
+                    
+                    工具参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="../hosted-projects.html">
+            
+                <a href="../hosted-projects.html">
+            
+                    
+                    项目托管
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.13" data-path="../arch-specific-notes/">
+            
+                <a href="../arch-specific-notes/">
+            
+                    
+                    架构专用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.14" data-path="../appendices/">
+            
+                <a href="../appendices/">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    完整内容
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../quickstart-ebuild-guide.html">
+            
+                <a href="../quickstart-ebuild-guide.html">
+            
+                    
+                    Ebuild 快速入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../general-concepts/">
+            
+                <a href="../general-concepts/">
+            
+                    
+                    一般概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../general-concepts/the-basics-of-autotools.html">
+            
+                <a href="../general-concepts/the-basics-of-autotools.html">
+            
+                    
+                    自动化工具基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../general-concepts/configuration-file-protection.html">
+            
+                <a href="../general-concepts/configuration-file-protection.html">
+            
+                    
+                    配置文件保护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../general-concepts/dependencies.html">
+            
+                <a href="../general-concepts/dependencies.html">
+            
+                    
+                    依赖关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.4" data-path="../general-concepts/ebuild-revisions.html">
+            
+                <a href="../general-concepts/ebuild-revisions.html">
+            
+                    
+                    Ebuild 修订
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.5" data-path="../general-concepts/emerge-and-ebuild-relationships.html">
+            
+                <a href="../general-concepts/emerge-and-ebuild-relationships.html">
+            
+                    
+                    Emerge 和 Ebuild 关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.6" data-path="../general-concepts/features.html">
+            
+                <a href="../general-concepts/features.html">
+            
+                    
+                    特征
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.7" data-path="../general-concepts/filesystem.html">
+            
+                <a href="../general-concepts/filesystem.html">
+            
+                    
+                    文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.8" data-path="../general-concepts/git-to-rsync.html">
+            
+                <a href="../general-concepts/git-to-rsync.html">
+            
+                    
+                    从 Git 到 RSYNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.9" data-path="../general-concepts/install-destinations.html">
+            
+                <a href="../general-concepts/install-destinations.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.10" data-path="../general-concepts/licenses.html">
+            
+                <a href="../general-concepts/licenses.html">
+            
+                    
+                    许可
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.11" data-path="../general-concepts/manifest.html">
+            
+                <a href="../general-concepts/manifest.html">
+            
+                    
+                    Manifest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.12" data-path="../general-concepts/mirrors.html">
+            
+                <a href="../general-concepts/mirrors.html">
+            
+                    
+                    镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.13" data-path="../general-concepts/news-items.html">
+            
+                <a href="../general-concepts/news-items.html">
+            
+                    
+                    新闻项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.14" data-path="../general-concepts/overlay.html">
+            
+                <a href="../general-concepts/overlay.html">
+            
+                    
+                    Overlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.15" data-path="../general-concepts/package-collisions.html">
+            
+                <a href="../general-concepts/package-collisions.html">
+            
+                    
+                    软件包冲突
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.16" data-path="../general-concepts/package-maintainers.html">
+            
+                <a href="../general-concepts/package-maintainers.html">
+            
+                    
+                    软件包维护者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.17" data-path="../general-concepts/position-independent-code.html">
+            
+                <a href="../general-concepts/position-independent-code.html">
+            
+                    
+                    独立代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.18" data-path="../general-concepts/the-portage-cache.html">
+            
+                <a href="../general-concepts/the-portage-cache.html">
+            
+                    
+                    Portage 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.19" data-path="../general-concepts/projects.html">
+            
+                <a href="../general-concepts/projects.html">
+            
+                    
+                    项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.20" data-path="../general-concepts/sandbox.html">
+            
+                <a href="../general-concepts/sandbox.html">
+            
+                    
+                    沙盒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.21" data-path="../general-concepts/slotting.html">
+            
+                <a href="../general-concepts/slotting.html">
+            
+                    
+                    Slotting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.22" data-path="../general-concepts/the-gentoo-repository.html">
+            
+                <a href="../general-concepts/the-gentoo-repository.html">
+            
+                    
+                    Gentoo 存储库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.23" data-path="../general-concepts/use-flags.html">
+            
+                <a href="../general-concepts/use-flags.html">
+            
+                    
+                    USE 标志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.24" data-path="../general-concepts/user-environment.html">
+            
+                <a href="../general-concepts/user-environment.html">
+            
+                    
+                    用户环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.25" data-path="../general-concepts/virtuals.html">
+            
+                <a href="../general-concepts/virtuals.html">
+            
+                    
+                    虚拟
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Ebuild 书写
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="ebuild-file-format.html">
+            
+                <a href="ebuild-file-format.html">
+            
+                    
+                    Ebuild 文件格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="eapi-usage-and-description.html">
+            
+                <a href="eapi-usage-and-description.html">
+            
+                    
+                    EAPI 用法和说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="use-flag-conditional-code.html">
+            
+                <a href="use-flag-conditional-code.html">
+            
+                    
+                    USE 标志条件代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.4" data-path="error-handling.html">
+            
+                <a href="error-handling.html">
+            
+                    
+                    错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.3.5" data-path="users-and-groups.html">
+            
+                <a href="users-and-groups.html">
+            
+                    
+                    用户和组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.6" data-path="messages.html">
+            
+                <a href="messages.html">
+            
+                    
+                    输出信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.7" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.8" data-path="using-eclasses.html">
+            
+                <a href="using-eclasses.html">
+            
+                    
+                    使用 Eclass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9" data-path="ebuild-functions/">
+            
+                <a href="ebuild-functions/">
+            
+                    
+                    Ebuild 函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.1" data-path="ebuild-functions/pkg_pretend.html">
+            
+                <a href="ebuild-functions/pkg_pretend.html">
+            
+                    
+                    pkg_pretend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.2" data-path="ebuild-functions/pkg_nofetch.html">
+            
+                <a href="ebuild-functions/pkg_nofetch.html">
+            
+                    
+                    pkg_nofetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.3" data-path="ebuild-functions/pkg_setup.html">
+            
+                <a href="ebuild-functions/pkg_setup.html">
+            
+                    
+                    pkg_setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.4" data-path="ebuild-functions/src_unpack/">
+            
+                <a href="ebuild-functions/src_unpack/">
+            
+                    
+                    src_unpack
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.4.1" data-path="ebuild-functions/src_unpack/version-control-system-sources.html">
+            
+                <a href="ebuild-functions/src_unpack/version-control-system-sources.html">
+            
+                    
+                    版本控制(VCS)源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.4.2" data-path="ebuild-functions/src_unpack/rpm-sources.html">
+            
+                <a href="ebuild-functions/src_unpack/rpm-sources.html">
+            
+                    
+                    RPM 来源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.4.3" data-path="ebuild-functions/src_unpack/other-archive-formats.html">
+            
+                <a href="ebuild-functions/src_unpack/other-archive-formats.html">
+            
+                    
+                    其他档案格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.5" data-path="ebuild-functions/src_prepare/">
+            
+                <a href="ebuild-functions/src_prepare/">
+            
+                    
+                    src_prepare
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.5.1" data-path="ebuild-functions/src_prepare/patching-with-epatch-and-eapply.html">
+            
+                <a href="ebuild-functions/src_prepare/patching-with-epatch-and-eapply.html">
+            
+                    
+                    使用 epatch 修补并有效应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.5.2" data-path="ebuild-functions/src_prepare/autopackage.html">
+            
+                <a href="ebuild-functions/src_prepare/autopackage.html">
+            
+                    
+                    自动打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.6" data-path="ebuild-functions/src_configure/">
+            
+                <a href="ebuild-functions/src_configure/">
+            
+                    
+                    src_configure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.6.1" data-path="ebuild-functions/src_configure/configuring-a-package.html">
+            
+                <a href="ebuild-functions/src_configure/configuring-a-package.html">
+            
+                    
+                    配置软件包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.7" data-path="ebuild-functions/src_compile/">
+            
+                <a href="ebuild-functions/src_compile/">
+            
+                    
+                    src_compile
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.7.1" data-path="ebuild-functions/src_compile/configuring-build-environment.html">
+            
+                <a href="ebuild-functions/src_compile/configuring-build-environment.html">
+            
+                    
+                    配置构建环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.7.2" data-path="ebuild-functions/src_compile/building-a-package.html">
+            
+                <a href="ebuild-functions/src_compile/building-a-package.html">
+            
+                    
+                    构建一个包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.7.3" data-path="ebuild-functions/src_compile/no-build-system.html">
+            
+                <a href="ebuild-functions/src_compile/no-build-system.html">
+            
+                    
+                    没有构建系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.8" data-path="ebuild-functions/src_test.html">
+            
+                <a href="ebuild-functions/src_test.html">
+            
+                    
+                    src_test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.9" data-path="ebuild-functions/src_install/">
+            
+                <a href="ebuild-functions/src_install/">
+            
+                    
+                    src_install
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.9.1" data-path="ebuild-functions/src_install/controllable-compression.html">
+            
+                <a href="ebuild-functions/src_install/controllable-compression.html">
+            
+                    
+                    可控压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.10" data-path="ebuild-functions/pkg_preinst.html">
+            
+                <a href="ebuild-functions/pkg_preinst.html">
+            
+                    
+                    pkg_preinst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.11" data-path="ebuild-functions/pkg_postinst.html">
+            
+                <a href="ebuild-functions/pkg_postinst.html">
+            
+                    
+                    pkg_postinst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.12" data-path="ebuild-functions/pkg_prerm.html">
+            
+                <a href="ebuild-functions/pkg_prerm.html">
+            
+                    
+                    pkg_prerm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.13" data-path="ebuild-functions/pkg_postrm.html">
+            
+                <a href="ebuild-functions/pkg_postrm.html">
+            
+                    
+                    pkg_postrm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.14" data-path="ebuild-functions/pkg_config.html">
+            
+                <a href="ebuild-functions/pkg_config.html">
+            
+                    
+                    pkg_config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.15" data-path="ebuild-functions/pkg_info.html">
+            
+                <a href="ebuild-functions/pkg_info.html">
+            
+                    
+                    pkg_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.10" data-path="miscellaneous-file/">
+            
+                <a href="miscellaneous-file/">
+            
+                    
+                    杂项文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.10.1" data-path="miscellaneous-file/package-and-category-metadata.xml.html">
+            
+                <a href="miscellaneous-file/package-and-category-metadata.xml.html">
+            
+                    
+                    包和 metadata.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.10.2" data-path="miscellaneous-file/patches.html">
+            
+                <a href="miscellaneous-file/patches.html">
+            
+                    
+                    补丁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.11" data-path="user-submitted-ebuilds.html">
+            
+                <a href="user-submitted-ebuilds.html">
+            
+                    
+                    用户提交的 Ebuild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.12" data-path="common-mistakes.html">
+            
+                <a href="common-mistakes.html">
+            
+                    
+                    常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../ebuild-maintenance/">
+            
+                <a href="../ebuild-maintenance/">
+            
+                    
+                    Ebuild 维护
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../ebuild-maintenance/adding-a-new-ebuild.html">
+            
+                <a href="../ebuild-maintenance/adding-a-new-ebuild.html">
+            
+                    
+                    添加新的 Ebuild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../ebuild-maintenance/git-for-gentoo-developers.html">
+            
+                <a href="../ebuild-maintenance/git-for-gentoo-developers.html">
+            
+                    
+                    适用于 Gentoo 开发人员的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.3" data-path="../ebuild-maintenance/package-and-slot-moves.html">
+            
+                <a href="../ebuild-maintenance/package-and-slot-moves.html">
+            
+                    
+                    包装和 slot 移动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.4" data-path="../ebuild-maintenance/removing-ebuilds-and-packages.html">
+            
+                <a href="../ebuild-maintenance/removing-ebuilds-and-packages.html">
+            
+                    
+                    删除 Ebuild 和软件包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../eclass-writing-guide.html">
+            
+                <a href="../eclass-writing-guide.html">
+            
+                    
+                    Eclass 书写指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../profiles/">
+            
+                <a href="../profiles/">
+            
+                    
+                    个人文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.6.1" data-path="../profiles/profiles-categories-file.html">
+            
+                <a href="../profiles/profiles-categories-file.html">
+            
+                    
+                    个人文件 类别文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.2" data-path="../profiles/profiles-info_-files.html">
+            
+                <a href="../profiles/profiles-info_-files.html">
+            
+                    
+                    个人文件 info_文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.3" data-path="../profiles/profiles-package.mask-files.html">
+            
+                <a href="../profiles/profiles-package.mask-files.html">
+            
+                    
+                    个人文件 package.mask 文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.4" data-path="../profiles/profiles-packages-file.html">
+            
+                <a href="../profiles/profiles-packages-file.html">
+            
+                    
+                    个人文件 packages 文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.5" data-path="../profiles/profiles-updates-directory.html">
+            
+                <a href="../profiles/profiles-updates-directory.html">
+            
+                    
+                    个人文件 updates/目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.6" data-path="../profiles/profiles-use.desc-and-use.local.desc-files.html">
+            
+                <a href="../profiles/profiles-use.desc-and-use.local.desc-files.html">
+            
+                    
+                    个人文件 use.desc 和 use.local.desc 文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.7" data-path="../profiles/profiles-use.mask-file.html">
+            
+                <a href="../profiles/profiles-use.mask-file.html">
+            
+                    
+                    个人文件 use.mask 文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../keywording-and-stabilization.html">
+            
+                <a href="../keywording-and-stabilization.html">
+            
+                    
+                    关键字和稳定化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../tasks-reference/">
+            
+                <a href="../tasks-reference/">
+            
+                    
+                    任务参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.8.1" data-path="../tasks-reference/completion-files.html">
+            
+                <a href="../tasks-reference/completion-files.html">
+            
+                    
+                    完成任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8.2" data-path="../tasks-reference/environment-files.html">
+            
+                <a href="../tasks-reference/environment-files.html">
+            
+                    
+                    环境文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8.3" data-path="../tasks-reference/init-scripts.html">
+            
+                <a href="../tasks-reference/init-scripts.html">
+            
+                    
+                    初始化脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8.4" data-path="../tasks-reference/working-with-pam.html">
+            
+                <a href="../tasks-reference/working-with-pam.html">
+            
+                    
+                    使用 PAM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../function-reference/">
+            
+                <a href="../function-reference/">
+            
+                    
+                    函数参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.9.1" data-path="../function-reference/build-functions-reference.html">
+            
+                <a href="../function-reference/build-functions-reference.html">
+            
+                    
+                    构建函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.2" data-path="../function-reference/error-functions-reference.html">
+            
+                <a href="../function-reference/error-functions-reference.html">
+            
+                    
+                    错误函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.3" data-path="../function-reference/install-functions-reference.html">
+            
+                <a href="../function-reference/install-functions-reference.html">
+            
+                    
+                    安装函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.4" data-path="../function-reference/message-functions-reference.html">
+            
+                <a href="../function-reference/message-functions-reference.html">
+            
+                    
+                    消息函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.5" data-path="../function-reference/query-functions-reference.html">
+            
+                <a href="../function-reference/query-functions-reference.html">
+            
+                    
+                    查询函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.6" data-path="../function-reference/sandbox-functions-reference.html">
+            
+                <a href="../function-reference/sandbox-functions-reference.html">
+            
+                    
+                    沙盒函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.7" data-path="../function-reference/sandbox-functions-reference.html">
+            
+                <a href="../function-reference/sandbox-functions-reference.html">
+            
+                    
+                    沙盒函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../eclass-reference/">
+            
+                <a href="../eclass-reference/">
+            
+                    
+                    Eclass 参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../tools-reference/">
+            
+                <a href="../tools-reference/">
+            
+                    
+                    工具参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.11.1" data-path="../tools-reference/bash-standard-shell.html">
+            
+                <a href="../tools-reference/bash-standard-shell.html">
+            
+                    
+                    bash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.2" data-path="../tools-reference/cat-file-concatenation.html">
+            
+                <a href="../tools-reference/cat-file-concatenation.html">
+            
+                    
+                    cat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.3" data-path="../tools-reference/cut-column-concatenation.html">
+            
+                <a href="../tools-reference/cut-column-concatenation.html">
+            
+                    
+                    cut
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.4" data-path="../tools-reference/diff-and-patch-file-differences.html">
+            
+                <a href="../tools-reference/diff-and-patch-file-differences.html">
+            
+                    
+                    diff 和 patch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.5" data-path="../tools-reference/echo-print-strings.html">
+            
+                <a href="../tools-reference/echo-print-strings.html">
+            
+                    
+                    echo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.6" data-path="../tools-reference/ekeyword-keywording.html">
+            
+                <a href="../tools-reference/ekeyword-keywording.html">
+            
+                    
+                    ekeyword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.7" data-path="../tools-reference/false-and-true-generating-return-codes.html">
+            
+                <a href="../tools-reference/false-and-true-generating-return-codes.html">
+            
+                    
+                    false 和 true
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.8" data-path="../tools-reference/find-finding-files.html">
+            
+                <a href="../tools-reference/find-finding-files.html">
+            
+                    
+                    find
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.9" data-path="../tools-reference/grep-text-filtering.html">
+            
+                <a href="../tools-reference/grep-text-filtering.html">
+            
+                    
+                    grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.10" data-path="../tools-reference/head-and-tail-line-extraction.html">
+            
+                <a href="../tools-reference/head-and-tail-line-extraction.html">
+            
+                    
+                    head 和 tail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.11" data-path="../tools-reference/sed-stream-editor.html">
+            
+                <a href="../tools-reference/sed-stream-editor.html">
+            
+                    
+                    sed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.12" data-path="../tools-reference/sort-sorting-text.html">
+            
+                <a href="../tools-reference/sort-sorting-text.html">
+            
+                    
+                    sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.13" data-path="../tools-reference/tr-character-translation.html">
+            
+                <a href="../tools-reference/tr-character-translation.html">
+            
+                    
+                    tr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.14" data-path="../tools-reference/uniq-filtering-duplicates.html">
+            
+                <a href="../tools-reference/uniq-filtering-duplicates.html">
+            
+                    
+                    uniq
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="../hosted-projects.html">
+            
+                <a href="../hosted-projects.html">
+            
+                    
+                    项目托管
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="../arch-specific-notes/">
+            
+                <a href="../arch-specific-notes/">
+            
+                    
+                    架构专用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.13.1" data-path="../arch-specific-notes/arch-specific-notes-alpha.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-alpha.html">
+            
+                    
+                    架构专用说明 - Alpha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13.2" data-path="../arch-specific-notes/arch-specific-notes-amd64-em64t.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-amd64-em64t.html">
+            
+                    
+                    架构专用说明 - AMD64/EM64T
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13.3" data-path="../arch-specific-notes/arch-specific-notes-mips.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-mips.html">
+            
+                    
+                    架构专用说明 - MIPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13.4" data-path="../arch-specific-notes/arch-specific-notes-ppc.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-ppc.html">
+            
+                    
+                    架构专用说明 - PPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13.5" data-path="../arch-specific-notes/arch-specific-notes-sparc.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-sparc.html">
+            
+                    
+                    架构专用说明 - SPARC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13.6" data-path="../arch-specific-notes/arch-specific-notes-x86.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-x86.html">
+            
+                    
+                    架构专用说明 - x86
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="../appendices/">
+            
+                <a href="../appendices/">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.14.1" data-path="../appendices/editor-configuration/">
+            
+                <a href="../appendices/editor-configuration/">
+            
+                    
+                    编辑器配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.14.1.1" data-path="../appendices/editor-configuration/configuring-vim-and-gvim.html">
+            
+                <a href="../appendices/editor-configuration/configuring-vim-and-gvim.html">
+            
+                    
+                    配置 vim 和 gvim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.1.2" data-path="../appendices/editor-configuration/configuring-gnu-emacs.html">
+            
+                <a href="../appendices/editor-configuration/configuring-gnu-emacs.html">
+            
+                    
+                    配置 GNU Emacs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.1.3" data-path="../appendices/editor-configuration/configuring-xemacs-for-utf-8.html">
+            
+                <a href="../appendices/editor-configuration/configuring-xemacs-for-utf-8.html">
+            
+                    
+                    配置 XEmacs UTF-8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.2" data-path="../appendices/common-problems.html">
+            
+                <a href="../appendices/common-problems.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.3" data-path="../appendices/further-reading.html">
+            
+                <a href="../appendices/further-reading.html">
+            
+                    
+                    进一步阅读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.4" data-path="../appendices/contributing-to-this-document.html">
+            
+                <a href="../appendices/contributing-to-this-document.html">
+            
+                    
+                    对本文档的贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.5" data-path="../appendices/gentoo-devbook-xml-guide.html">
+            
+                <a href="../appendices/gentoo-devbook-xml-guide.html">
+            
+                    
+                    Gentoo DevBook XML 指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.6" data-path="../appendices/contributions.html">
+            
+                <a href="../appendices/contributions.html">
+            
+                    
+                    贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.7" data-path="../appendices/todo-list.html">
+            
+                <a href="../appendices/todo-list.html">
+            
+                    
+                    TODO 清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >用户和组</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7528;&#x6237;&#x548C;&#x7EC4;">&#x7528;&#x6237;&#x548C;&#x7EC4;</h1>
+<p>&#x521B;&#x5EFA;&#x7528;&#x6237;&#x548C;&#x7EC4;&#x53D7;<a href="https://gentoo.org/glep/glep-0081.html" target="_blank">GLEP 81</a>&#x7EA6;&#x675F;&#x3002;&#x901A;&#x8FC7; <code>acct-user</code> &#x548C; <code>acct-groupeclasss</code> &#x5B9E;&#x73B0;&#x3002;&#x65B0;&#x7684;&#x7528;&#x6237;&#x548C;&#x7EC4;&#x5728;&#x5206;&#x522B;&#x5305;&#x521B;&#x5EFA; <code>acct-user</code> &#x548C; <code>acct-group</code> &#x7C7B;&#x522B;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x68C0;&#x67E5; <a href="https://api.gentoo.org/uid-gid.txt" target="_blank">UID / GID &#x5206;&#x914D;&#x5217;&#x8868;</a>&#xFF0C;&#x5E76;&#x5728; 101 &#x5230; 499 &#x4E4B;&#x95F4;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x7A7A;&#x95F2;&#x7684; UID / GID&#x3002;&#x5982;&#x679C;&#x8981;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x548C;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x76F8;&#x540C;&#x540D;&#x79F0;&#x7684;&#x7EC4;&#xFF0C;&#x8BF7;&#x5206;&#x522B;&#x4E3A;&#x5176; UID &#x548C; GID &#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x7F16;&#x53F7;&#x3002;&#x5982;&#x6709;&#x7591;&#x95EE;&#xFF0C;&#x8BF7;&#x4ECE; 499 &#x4E0B;&#x53D6;&#x4E0B;&#x4E00;&#x4E2A;&#x514D;&#x8D39;&#x53F7;&#x7801;&#x3002;</p>
+<p>&#x5C06;&#x4F60;&#x7684;&#x65B0;&#x7528;&#x6237;&#x548C;&#x7EC4;&#x6DFB;&#x52A0;&#x5230; <code>uid-gid.txt</code> &#x4F4D;&#x4E8E; <a href="https://gitweb.gentoo.org/data/api.git" target="_blank">data / api.git</a> &#x5B58;&#x50A8;&#x5E93;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C; &#x5E76;&#x5728;&#x6DFB;&#x52A0;&#x5B9E;&#x9645;&#x5305;&#x4E4B;&#x524D;&#x5C06;&#x5176;&#x63A8;&#x9001;&#x3002;&#x8FD9;&#x7B97;&#x4F5C;&#x4FDD;&#x7559;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x5C06;&#x9632;&#x6B62;&#x51B2;&#x7A81;&#x3002;&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x63A8;&#x9001;&#x65B0;&#x7684; ebuild&#x3002;</p>
+<p><code>user.eclass</code> &#x73B0;&#x5728;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x7684;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x65B9;&#x5F0F;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x5F97;&#x5C06;&#x5176;&#x7528;&#x4E8E;&#x65B0;&#x8F6F;&#x4EF6;&#x5305;&#x3002;</p>
+<h2 id="ebuild-&#x7EC4;">ebuild &#x7EC4;</h2>
+<p>ebuild &#x7EC4;&#x653E;&#x7F6E;&#x5728;<code>acct-group</code>&#x7C7B;&#x522B;&#x4E2D;&#xFF0C;&#x8F6F;&#x4EF6;&#x5305;&#x540D;&#x79F0;&#x4E0E;&#x7EC4;&#x540D;&#x79F0;&#x5339;&#x914D;&#x3002; <code>acct-group / suricata</code>&#x7684;&#x4EE5;&#x4E0B; ebuild &#x53EF;&#x7528;&#x4F5C;&#x7F16;&#x5199;&#x7EC4; ebuild &#x7684;&#x6A21;&#x677F;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># Copyright 2019-2020 Gentoo Authors</span>
+<span class="hljs-comment"># Distributed under the terms of the GNU General Public License v2</span>
+
+EAPI=7
+
+inherit acct-group
+
+DESCRIPTION=<span class="hljs-string">&quot;Group for Suricata IDS&quot;</span>
+ACCT_GROUP_ID=477
+</code></pre>
+<p>ACCT_GROUP_ID &#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x4E3A;&#x8BF7;&#x6C42;&#x7684; GID&#x3002;</p>
+<h2 id="ebuild-&#x7528;&#x6237;">ebuild &#x7528;&#x6237;</h2>
+<p>ebuild &#x7528;&#x6237; &#x653E;&#x5728; <code>acct-user</code> &#x7C7B;&#x522B;&#x4E2D;&#xFF0C;&#x5305;&#x540D;&#x79F0;&#x4E0E;&#x7528;&#x6237;&#x540D;&#x5339;&#x914D;&#x3002;&#x4EE5;&#x4E0B;<code>acct-user / suricata</code>&#x7684; ebuild &#x53EF;&#x7528;&#x4F5C;&#x7F16;&#x5199;&#x7528;&#x6237; ebuild &#x7684;&#x6A21;&#x677F;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># Copyright 2019-2020 Gentoo Authors</span>
+<span class="hljs-comment"># Distributed under the terms of the GNU General Public License v2</span>
+
+EAPI=7
+
+inherit acct-user
+
+DESCRIPTION=<span class="hljs-string">&quot;User for Suricata IDS&quot;</span>
+ACCT_USER_ID=477
+ACCT_USER_GROUPS=( <span class="hljs-variable">${PN}</span> )
+
+acct-user_add_deps
+</code></pre>
+<p><code>ACCT_USER_ID</code> &#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x4E3A;&#x8BF7;&#x6C42;&#x7684; GID&#x3002; <code>ACCT_USER_GROUPS</code> &#x5E94;&#x8BE5;&#x5217;&#x51FA;&#x7528;&#x6237;&#x6240;&#x5C5E;&#x7684;&#x6240;&#x6709;&#x7EC4;&#xFF0C;&#x9996;&#x5148;&#x662F;&#x4E3B;&#x8981;&#x7EC4;&#x3002;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x5173;&#x952E;&#x5B57;&#x90FD;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;</p>
+<p><code>ACCT_USER_SHELL</code> &#x53EF;&#x7528;&#x4E8E;&#x4E3A;&#x7528;&#x6237;&#x8BBE;&#x7F6E; shell&#x3002;&#x5982;&#x679C;&#x672A;&#x8BBE;&#x7F6E;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x7B49;&#x540C;&#x4E8E;&#x672A;&#x767B;&#x5F55;&#x7684;&#x6700;&#x4F73;&#x7CFB;&#x7EDF;&#x3002; <code>ACCT_USER_HOME</code> &#x6307;&#x5B9A;&#x4E3B;&#x76EE;&#x5F55;&#xFF0C;<code>/dev/null</code>&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x76EE;&#x5F55;&#x3002; <code>ACCT_USER_HOME_OWNER</code> &#x53EF;&#x7528;&#x4E8E;&#x8986;&#x76D6;&#x4E3B;&#x76EE;&#x5F55;&#x7684;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x5E76; <code>ACCT_USER_HOME_PERMS</code> &#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x6743;&#x9650;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x662F;&#x6240;&#x6709;&#x8005;&#x7684;&#x7528;&#x6237;&#x548C;&#x4E3B;&#x8981;&#x7EC4;&#xFF0C;&#x6743;&#x9650;&#x662F; 0755&#x3002;</p>
+<div>
+<b>&#x8981;&#x70B9;</b>&#xFF1A; &#x53EA;&#x8981;&#x6709;&#x53EF;&#x80FD;&#xFF0C;&#x90FD;&#x5E94;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684; Shell &#x548C;&#x4E3B;&#x76EE;&#x5F55;&#x3002;&#x5176;&#x7406;&#x7531;&#x5728;&#x4E0B;&#x9762;&#x8BF4;&#x660E;&#x3002;
+</div>
+
+<p>&#x4F60;&#x5E94;&#x8BE5;&#x5F00;&#x59CB;&#x8FDB;&#x884C; GLEP 81 &#x8FC1;&#x79FB;&#xFF0C;&#x4F8B;&#x5982; EAPI &#x66F4;&#x65B0;&#x3002;&#x4E0E;&#x5176;&#x5C06;&#x7528;&#x6237;&#x7684;&#x8BBE;&#x7F6E;&#x7B80;&#x5355;&#x5730;&#x590D;&#x5236;&#x5230; <code>acct-user</code>&#x8F6F;&#x4EF6;&#x5305;&#x4E2D;&#xFF0C;&#x4E0D;&#x5982;&#x501F;&#x6B64;&#x673A;&#x4F1A;&#x91CD;&#x65B0;&#x8BC4;&#x4F30;&#x7528;&#x6237;&#x7684;&#x540D;&#x79F0;&#xFF0C;shell&#xFF0C;&#x4E3B;&#x76EE;&#x5F55;&#x53CA;&#x5176;&#x6743;&#x9650;&#x3002;&#x6211;&#x4EEC;&#x7684; GLEP 81 &#x5B9E;&#x65BD;&#x65B9;&#x6848;&#x5C06;&#x63ED;&#x793A;&#x8BB8;&#x591A;&#x8FC7;&#x53BB;&#x88AB;&#x6DD8;&#x6C70;&#x7684;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x95EE;&#x9898;&#x3002;</p>
+<h2 id="&#x9009;&#x62E9;-shell">&#x9009;&#x62E9; shell</h2>
+<p>&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E94;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4; shell &#x7A0B;&#x5E8F;&#xFF08;&#x5373;&#x65E0; shell &#x7A0B;&#x5E8F;&#xFF09;&#x3002;&#x4ECD;&#x7136;&#x80FD;&#x4EE5;&#x65E0; shell &#x7A0B;&#x5E8F;&#x7684;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x542F;&#x52A8;&#x670D;&#x52A1;&#xFF0C;&#x5E76;&#x4E14;&#x5B88;&#x62A4;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x5C06;&#x7279;&#x6743;&#x6388;&#x4E88;&#x65E0; shell &#x7A0B;&#x5E8F;&#x7684;&#x7528;&#x6237;&#x3002;&#x5982;&#x6709;&#x5FC5;&#x8981;&#xFF0C;&#x7BA1;&#x7406;&#x5458;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8986;&#x76D6;&#x7528;&#x6237;&#x7684;&#x9ED8;&#x8BA4;<code>shell su -s &lt;shell&gt; &lt;username&gt;</code>&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x6D4B;&#x8BD5;&#xFF0C;&#x7BA1;&#x7406; SSH &#x51ED;&#x636E;&#x4EE5;&#x53CA;&#x5728; ebuild <code>pkg_config</code> &#x9636;&#x6BB5;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x914D;&#x7F6E;&#x5C31;&#x8DB3;&#x591F;&#x4E86;&#x3002;</p>
+<p>&#x8BE5;&#x89C4;&#x5219;&#x7684;&#x4E00;&#x4E2A;&#x660E;&#x663E;&#x4F8B;&#x5916;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x6237;&#x9700;&#x8981;&#x4EA4;&#x4E92;&#x5730;&#x767B;&#x5F55;&#x8BE5;&#x5E10;&#x6237;&#xFF0C;&#x5C31;&#x50CF; <code>root</code> &#x7528;&#x6237;&#x4E00;&#x6837;&#x3002;&#x5F53;&#x7136;&#x4E5F;&#x5B58;&#x5728;&#x5176;&#x4ED6;&#x4F8B;&#x5916;&#x60C5;&#x51B5;&#xFF0C;&#x4F46;&#x5E94;&#x9010;&#x6848;&#x8BC4;&#x4F30;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5C1A;&#x672A;&#x68C0;&#x67E5;&#xFF0C;&#x8BF7;&#x4E0D;&#x8981;&#x5C06;&#x7528;&#x6237;&#x7684; shell &#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x4E3A;&#xFF0C;<code>/bin/bash</code> &#x56E0;&#x4E3A;&#x4F60;&#x8BA4;&#x4E3A;&#x4ED6;<em>&#x53EF;&#x80FD;</em>&#x9700;&#x8981;&#x5B83;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x7684;&#x76EE;&#x6807;&#x662F;&#x53CC;&#x91CD;&#x7684;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x6700;&#x5C0F;&#x7279;&#x6743;&#x539F;&#x5219;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x6237;&#x4E0D;&#x9700;&#x8981;&#x771F;&#x6B63;&#x7684; shell&#xFF0C;&#x90A3;&#x4E48;&#x4ED6;&#x5C31;&#x4E0D;&#x5E94;&#x8BE5;&#x62E5;&#x6709; shell&#x3002;&#x540C;&#x6837;&#xFF0C;&#x65E0; shell &#x4F1A;&#x8BA9;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x5B89;&#x5FC3;&#xFF1A;&#x4ED6;&#x4E0D;&#x5FC5;&#x62C5;&#x5FC3;&#x8BE5;&#x7528;&#x6237;&#x662F;&#x5426;&#x62E5;&#x6709;&#x5BC6;&#x7801;&#xFF08;&#x4EE5;&#x53CA;&#x5BC6;&#x7801;&#x7684;&#x5F3A;&#x5EA6;&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x5426;&#x5177;&#x6709;&#x5BC6;&#x7801;&#x3002;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x6743;&#x9650;&#x5168;&#x90E8;&#x8BBE;&#x7F6E;&#x6B63;&#x786E;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; SSH &#x7B49;&#x767B;&#x5F55;&#x3002;</p>
+<h2 id="&#x9009;&#x62E9;&#x4E3B;&#x76EE;&#x5F55;">&#x9009;&#x62E9;&#x4E3B;&#x76EE;&#x5F55;</h2>
+<p>&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E94;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x4E3B;&#x76EE;&#x5F55;&#xFF08;&#x5373;&#x6CA1;&#x6709;&#x4E3B;&#x76EE;&#x5F55;&#xFF09;&#x3002;GLEP 81 &#x66F4;&#x6539;&#x4E86;&#x6709;&#x5173;&#x4E3B;&#x76EE;&#x5F55;&#x7684;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x7684;&#x4E24;&#x4E2A;&#x65B9;&#x9762;&#xFF1A;</p>
+<ol>
+<li>&#x521B;&#x5EFA;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x73B0;&#x6709;&#x76EE;&#x5F55;&#x4E0A;&#x7684;&#x6743;&#x9650;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#xFF0C;&#x5BF9;&#x4E8E;&#x65B0;&#x7248;&#x672C;&#x7684; <code>acct-user</code> &#x5305;&#x6765;&#x8BF4;&#xFF0C;&#x5FC5;&#x987B;&#x80FD;&#x591F;&#x4FEE;&#x590D;&#x5176;&#x4E3B;&#x76EE;&#x5F55;&#x7684;&#x6240;&#x6709;&#x6743;&#x548C;&#x6743;&#x9650;&#x3002;</li>
+<li>&#x7528;&#x6237;&#x540D;&#x4EE5;&#x5916;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237;&#x6570;&#x636E;&#x5BF9;&#x4E8E;&#x4F9D;&#x8D56;&#x4E8E;&#x8BE5;&#x7528;&#x6237;&#x7684; ebuild &#x6765;&#x8BF4;&#x90FD;&#x662F;&#x975E;&#x672C;&#x5730;&#x7684;&#x3002;&#x8FD9;&#x4EC5;&#x4EC5;&#x662F;&#x5C06;&#x7528;&#x6237;&#x521B;&#x5EFA;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x8F6F;&#x4EF6;&#x5305;&#x79FB;&#x5230;&#x5355;&#x72EC; <code>acct-user</code>&#x8F6F;&#x4EF6;&#x5305;&#x4E2D;&#x7684;&#x526F;&#x4F5C;&#x7528; &#x3002;</li>
+</ol>
+<p>&#x7B2C;&#x4E00;&#x9879;&#x8868;&#x793A;&#x9009;&#x62E9;&#x4E3B;&#x76EE;&#x5F55;&#x65F6;&#x5E94;&#x4FDD;&#x6301;&#x4FDD;&#x5B88;&#x3002;&#x5982;&#x679C;&#x6709;&#x53EF;&#x80FD;&#xFF0C;&#x8BF7;&#x907F;&#x514D;&#x9009;&#x62E9;&#x5176;&#x4ED6;&#x8F6F;&#x4EF6;&#x5305;&#x4F7F;&#x7528;&#x7684;&#x4E3B;&#x76EE;&#x5F55;&#x3002;&#x7279;&#x522B;&#x662F;&#xFF0C;&#x6CA1;&#x6709;&#x4E24;&#x4E2A; <code>acct-user</code>&#x8F6F;&#x4EF6;&#x5305;&#x5E94;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x4E3B;&#x76EE;&#x5F55;&#x3002;&#x6700;&#x597D;&#xFF0C;&#x5171;&#x4EAB;&#x4E3B;&#x76EE;&#x5F55;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x6743;&#x548C;&#x6743;&#x9650;&#x9700;&#x8981;&#x5728;&#x5171;&#x4EAB;&#x5B83;&#x7684;&#x6240;&#x6709;&#x8F6F;&#x4EF6;&#x5305;&#x4E4B;&#x95F4;&#x4FDD;&#x6301;&#x540C;&#x6B65;&#x3002;&#x6700;&#x574F;&#x7684;&#x60C5;&#x51B5;&#x662F;&#xFF0C;&#x4E00;&#x4E2A;&#x8F6F;&#x4EF6;&#x5305;&#x4E0D;&#x540C;&#x6B65;&#xFF0C;&#x5E76;&#x4E3A;&#x5176;&#x4ED6;&#x4E0D;&#x518D;&#x5177;&#x6709;&#x9884;&#x671F;&#x6743;&#x9650;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#x5F15;&#x5165;&#x4E86;&#x5B89;&#x5168;&#x6F0F;&#x6D1E;&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#x9879;&#x8868;&#x793A;&#x5982;&#x679C;&#x8F6F;&#x4EF6;&#x5305;&#x9700;&#x8981;&#x7528;&#x6237;&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x518D;&#x786E;&#x5B9A;&#x8BE5;&#x7528;&#x6237;&#x7684;&#x4E3B;&#x76EE;&#x5F55;&#x6216;&#x5176;&#x6240;&#x6709;&#x6743;&#x548C;&#x6743;&#x9650;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#x8981;&#x6C42;&#x67D0;&#x4E2A;&#x76EE;&#x5F55;&#x5FC5;&#x987B;&#x7531;&#x67D0;&#x4E2A;&#x7528;&#x6237;&#x62E5;&#x6709;&#x548C;&#x53EF;&#x5199;&#xFF0C;&#x5219;&#x8BE5;&#x8F6F;&#x4EF6;&#x5305;&#x7684; ebuild &#x5E94;&#x8BE5;&#x521B;&#x5EFA;&#x8BE5;&#x76EE;&#x5F55;&#x5E76;&#x786E;&#x4FDD;&#x8BE5;&#x76EE;&#x5F55;&#x53EF;&#x88AB;&#x7528;&#x6237;&#x5199;&#x5165;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x5373;&#x4F7F;&#x8BE5;&#x4F9D;&#x8D56;&#x9879;&#x662F;&#x4E00;&#x4E2A; <code>acct-user</code>&#x8F6F;&#x4EF6;&#x5305;&#xFF0C;&#x4E5F;&#x4E0D;&#x5E94;&#x4F9D;&#x8D56;&#x8BE5;&#x4F9D;&#x8D56;&#x9879;&#x201C;&#x4EE5;&#x4F20;&#x9012;&#x65B9;&#x5F0F;&#x201D;&#x521B;&#x5EFA;&#x7684;&#x76EE;&#x5F55; &#x3002;</p>
+<p>&#x7EFC;&#x4E0A;&#x6240;&#x8FF0;&#xFF0C;</p>
+<ul>
+<li>&#x907F;&#x514D;&#x4F7F;&#x7528; <code>ACCT_USER_HOME</code> &#x5C5E;&#x4E8E;&#x53E6;&#x4E00;&#x4E2A;&#x8F6F;&#x4EF6;&#x5305;&#x7684;&#x3002;</li>
+<li>&#x6CA1;&#x6709;&#x4E24;&#x4E2A; acct &#x7528;&#x6237;&#x8F6F;&#x4EF6;&#x5305;&#x5E94;&#x5B9A;&#x4E49;&#x76F8;&#x540C;&#x7684; <code>ACCT_USER_HOME</code>&#x3002;</li>
+<li>&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x8F6F;&#x4EF6;&#x5305;&#x7684;&#x914D;&#x7F6E;&#x9700;&#x8981;<code>&lt;username&gt;</code>&#x624D;&#x80FD;&#x5199;&#x5165;<code>/var/lib/&lt;username&gt;</code>&#xFF0C;&#x5219;&#x8F6F;&#x4EF6;&#x5305;&#x7684; ebuild &#x5E94;&#x8BE5;&#x521B;&#x5EFA;&#x8BE5;&#x76EE;&#x5F55;&#x5E76;&#x8BBE;&#x7F6E;&#x5176;&#x6240;&#x6709;&#x6743;&#x548C;&#x6743;&#x9650;&#x3002;&#x9664;&#x5176;&#x4ED6;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x5916;&#xFF0C;&#x76F8;&#x5E94;&#x7684; <code>acct-user</code>&#x8F6F;&#x4EF6;&#x5305;&#x5E94;&#x4FDD;&#x7559; <code>ACCT_USER_HOME</code> &#x5176;&#x9ED8;&#x8BA4;&#x503C;&#xFF08;&#x7A7A;&#xFF09;&#xFF1B;&#x8BBE;&#x7F6E; <code>ACCT_USER_HOME=/var/lib/&lt;username&gt;</code>&#x4F1A;&#x4EA7;&#x751F;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x91CD;&#x590D;&#xFF0C;&#x5E76;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x6743;&#x9650;&#x5931;&#x53BB;&#x540C;&#x6B65;&#x3002;</li>
+</ul>
+<h2 id="&#x9009;&#x62E9;&#x4E3B;&#x76EE;&#x5F55;&#x6240;&#x6709;&#x6743;">&#x9009;&#x62E9;&#x4E3B;&#x76EE;&#x5F55;&#x6240;&#x6709;&#x6743;</h2>
+<p>&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x4E3B;&#x76EE;&#x5F55;&#x6240;&#x6709;&#x6743;&#x662F;&#x6B63;&#x786E;&#x7684;&#x3002;&#x5982;&#x679C;&#x6839;&#x672C;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x975E;&#x9ED8;&#x8BA4;&#x7684;&#x4E3B;&#x76EE;&#x5F55;&#xFF0C;&#x5219;&#x8BE5;&#x76EE;&#x5F55;&#x5E94;&#x53EF;&#x7531;&#x5176;&#x7528;&#x6237;&#x5199;&#x5165;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x5176;&#x6240;&#x6709;&#x6743;&#x6388;&#x4E88;&#x5176;&#x4ED6;&#x4EBA;&#x53EF;&#x4EE5;&#x9632;&#x6B62;&#x8BE5;&#x60C5;&#x51B5;&#x53D1;&#x751F;&#x3002;&#x4E0D;&#x53EF;&#x5199;&#x8868;&#x793A;&#x5DF2;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5171;&#x4EAB;&#x4E14;&#x53EF;&#x80FD;&#x654F;&#x611F;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x4E3B;&#x76EE;&#x5F55;&#x4E0D;&#x53EF;&#x5199;&#x7684;&#x4E8B;&#x5B9E;&#x8868;&#x660E;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x4E3B;&#x76EE;&#x5F55;&#xFF08;&#x4E5F;&#x662F;&#x4E0D;&#x53EF;&#x5199;&#x7684;&#xFF09;&#x5C31;&#x8DB3;&#x591F;&#x4E86;&#x3002;&#x4E3B;&#x76EE;&#x5F55;&#x6307;&#x5357;&#x8BF4;&#x660E;&#x4E86;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x4E3A;&#x4EC0;&#x4E48;&#x6700;&#x597D;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8BBE;&#x7F6E;<code>ACCT_USER_HOME_OWNER=&quot;root:root&quot;</code>&#x662F;&#x53EF;&#x7591;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4F3C;&#x4E4E;&#x662F;&#x8981;&#x201C;&#x64A4;&#x6D88;&#x201D;&#x7528;&#x6237;&#x8F6F;&#x4EF6;&#x5305;&#x66F4;&#x6539;&#x7684;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x5E76;&#x4E14;&#x53EA;&#x6709;&#x5728;&#x5176;&#x4ED6;&#x8F6F;&#x4EF6;&#x5305;&#x4F7F;&#x7528;&#x4E86;&#x76F8;&#x5173;&#x8DEF;&#x5F84;&#x65F6;&#x624D;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x3002;</p>
+<h2 id="&#x9009;&#x62E9;&#x4E3B;&#x76EE;&#x5F55;&#x6743;&#x9650;">&#x9009;&#x62E9;&#x4E3B;&#x76EE;&#x5F55;&#x6743;&#x9650;</h2>
+<p>&#x5728;&#x8BB8;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x4E3B;&#x76EE;&#x5F55;&#x6743;&#x9650;&#xFF08;0755&#xFF09;&#x5C31;&#x8DB3;&#x591F;&#x4E86;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#x5C06;&#x5728; 0700 &#x6216; 0750 &#x6A21;&#x5F0F;&#x4E0B;&#x5DE5;&#x4F5C;&#xFF0C;&#x5219;&#x6700;&#x597D;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x6A21;&#x5F0F;&#x3002;&#x8FD9;&#x53C8;&#x662F;&#x6700;&#x5C0F;&#x7279;&#x6743;&#x7684;&#x539F;&#x5219;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#x4F7F;&#x7528;&#x4E0D;&#x53EF;&#x5199;&#x7684;&#x4E3B;&#x76EE;&#x5F55;&#xFF0C;&#x5219;&#x4F60;&#x53EF;&#x80FD;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x65E0;&#x4E3B;&#x76EE;&#x5F55;&#xFF01;</p>
+<div class="alert alert-warning">
+<b>&#x8B66;&#x544A;</b>&#xFF1A; &#x7EDD;&#x5BF9;&#x4E0D;&#x53EF;&#x5728;<code>ACCT_USER_HOME_PERMS</code>&#x4E2D;&#x8BBE;&#x7F6E;&#x4E16;&#x754C;&#x53EF;&#x5199;&#x4F4D;&#x3002;&#x8FD9;&#x6C38;&#x8FDC;&#x662F;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x5E38;&#x662F;&#x53EF;&#x5229;&#x7528;&#x7684;&#x3002;
+</div>
+
+<h2 id="&#x7ED3;&#x8BED;">&#x7ED3;&#x8BED;</h2>
+<p>&#x8FD9;&#x4E9B;&#x5EFA;&#x8BAE;&#x4E0D;&#x662F;&#x89C4;&#x5219;&#xFF0C;&#x4E5F;&#x4E0D;&#x662F;&#x4E00;&#x6210;&#x4E0D;&#x53D8;&#x7684;&#xFF0C;&#x9664;&#x975E;&#x53EF;&#x80FD;&#x662F;&#x4E16;&#x754C;&#x53EF;&#x5199;&#x7684;&#x8B66;&#x544A;&#x3002;tree &#x4E2D;&#x6709;<code>chroot()</code>&#x5230;<code>$HOME</code>&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#xFF0C;&#x51FA;&#x4E8E;&#x5B89;&#x5168;&#x539F;&#x56E0;&#xFF0C;&#x8981;&#x6C42;&#x8BE5;&#x76EE;&#x5F55;&#x5F52;<code>root:root</code>&#x62E5;&#x6709;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x65E0;&#x6CD5;&#x907F;&#x514D;&#x901A;&#x8FC7;&#x4E3B;&#x76EE;&#x5F55;&#x5C06;&#x7528;&#x6237;&#x9690;&#x5F0F;&#x7ED1;&#x5B9A;&#x5230;&#x9700;&#x8981;&#x5B83;&#x7684;&#x5305;&#xFF0C;&#x800C;&#x60A8;&#x80FD;&#x505A;&#x7684;&#x6700;&#x597D;&#x7684;&#x5C31;&#x662F;&#x5C1D;&#x8BD5;&#x786E;&#x4FDD;&#x7528;&#x6237;&#x548C;&#x8DEF;&#x5F84;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x4EE5;&#x514D;&#x53D1;&#x751F;&#x51B2;&#x7A81;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x9664;&#x975E;&#x60A8;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#x662F;&#x7279;&#x6B8A;&#x7684;&#xFF0C;&#x5426;&#x5219;&#x9075;&#x5FAA;&#x8FD9;&#x4E9B;&#x51C6;&#x5219;&#x5C06;&#x6700;&#x5927;&#x7A0B;&#x5EA6;&#x5730;&#x51CF;&#x5C11;&#x5C06;&#x6765;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x3002;</p>
+<h2 id="&#x5229;&#x7528;&#x8F6F;&#x4EF6;&#x5305;&#x4E2D;&#x7684;&#x7528;&#x6237;&#x548C;&#x7EC4;">&#x5229;&#x7528;&#x8F6F;&#x4EF6;&#x5305;&#x4E2D;&#x7684;&#x7528;&#x6237;&#x548C;&#x7EC4;</h2>
+<p>&#x4E3A;&#x4E86;&#x4F7F;&#x4F60;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#x5B89;&#x88C5;&#x7279;&#x5B9A;&#x7684;&#x7528;&#x6237;&#x548C;&#x7EC4;&#xFF0C;&#x8BF7;&#x5C06;&#x5B83;&#x4EEC;&#x6307;&#x5B9A;&#x4E3A;&#x4F9D;&#x8D56;&#x9879;&#x3002;&#x6784;&#x5EFA;&#x65F6;&#x6240;&#x9700;&#x7684;&#x5E10;&#x6237;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x5728;<code>DEPEND</code>&#x4E2D; &#xFF0C;&#x8FD0;&#x884C;&#x65F6;&#x6240;&#x9700;&#x7684;&#x5E10;&#x6237;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x5728;<code>RDEPEND</code>&#x4E2D;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;<code>foo</code> &#x5728;&#x8FD0;&#x884C;&#x65F6;&#x9700;&#x8981;&#x7528;&#x6237;&#x548C;&#x7EC4;&#x7684; ebuild &#x5C06;&#x6307;&#x5B9A;&#xFF1A;</p>
+<pre><code class="lang-bash">RDEPEND=<span class="hljs-string">&quot;
+    acct-user/foo
+    acct-group/foo&quot;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x5728;<code>pkg_preinst</code>&#x4E2D;&#x8BBE;&#x7F6E;&#x4E86;&#x5DF2;&#x5B89;&#x88C5;&#x6587;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x6743;&#xFF0C;&#x8FD9;&#x4E5F;&#x5C31;&#x8DB3;&#x591F;&#x4E86;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C; ebuild &#x9700;&#x8981;&#x5728;&#x6784;&#x5EFA;&#x65F6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7528;&#x6237;&#x548C;&#x7EC4;&#xFF0C;&#x5B83;&#x5C06;&#x6307;&#x5B9A;&#xFF1A;</p>
+<pre><code class="lang-bash">RDEPEND=<span class="hljs-string">&quot;
+    acct-user/foo
+    acct-group/foo&quot;</span>
+DEPEND=<span class="hljs-string">&quot;<span class="hljs-variable">${RDEPEND}</span>&quot;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="error-handling.html" class="navigation navigation-prev " aria-label="Previous page: 错误处理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="messages.html" class="navigation navigation-next " aria-label="Next page: 输出信息">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"用户和组","level":"1.2.2.3.5","depth":4,"next":{"title":"输出信息","level":"1.2.2.3.6","depth":4,"path":"index/ebuild-writing/messages.md","ref":"index/ebuild-writing/messages.md","articles":[]},"previous":{"title":"错误处理","level":"1.2.2.3.4","depth":4,"path":"index/ebuild-writing/error-handling.md","ref":"index/ebuild-writing/error-handling.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"index/ebuild-writing/users-and-groups.md","mtime":"2021-02-05T16:04:17.768Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-05T16:09:25.345Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

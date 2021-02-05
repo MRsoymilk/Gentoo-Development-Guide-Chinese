@@ -1,0 +1,2546 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Gentoo DevBook XML 指南 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="contributions.html" />
+    
+    
+    <link rel="prev" href="contributing-to-this-document.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    内容
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../quickstart-ebuild-guide.html">
+            
+                <a href="../quickstart-ebuild-guide.html">
+            
+                    
+                    Ebuild 快速入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../general-concepts/">
+            
+                <a href="../general-concepts/">
+            
+                    
+                    一般概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../ebuild-writing/">
+            
+                <a href="../ebuild-writing/">
+            
+                    
+                    Ebuild 书写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../ebuild-maintenance/">
+            
+                <a href="../ebuild-maintenance/">
+            
+                    
+                    Ebuild 维护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../eclass-writing-guide.html">
+            
+                <a href="../eclass-writing-guide.html">
+            
+                    
+                    Eclass 书写指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../profiles/">
+            
+                <a href="../profiles/">
+            
+                    
+                    个人文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../keywording-and-stabilization.html">
+            
+                <a href="../keywording-and-stabilization.html">
+            
+                    
+                    关键字和稳定化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../tasks-reference/">
+            
+                <a href="../tasks-reference/">
+            
+                    
+                    任务参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../function-reference/">
+            
+                <a href="../function-reference/">
+            
+                    
+                    函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.10" data-path="../eclass-reference/">
+            
+                <a href="../eclass-reference/">
+            
+                    
+                    Eclass 参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="../tools-reference/">
+            
+                <a href="../tools-reference/">
+            
+                    
+                    工具参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="../hosted-projects.html">
+            
+                <a href="../hosted-projects.html">
+            
+                    
+                    项目托管
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.13" data-path="../arch-specific-notes/">
+            
+                <a href="../arch-specific-notes/">
+            
+                    
+                    架构专用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    完整内容
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../quickstart-ebuild-guide.html">
+            
+                <a href="../quickstart-ebuild-guide.html">
+            
+                    
+                    Ebuild 快速入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../general-concepts/">
+            
+                <a href="../general-concepts/">
+            
+                    
+                    一般概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../general-concepts/the-basics-of-autotools.html">
+            
+                <a href="../general-concepts/the-basics-of-autotools.html">
+            
+                    
+                    自动化工具基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../general-concepts/configuration-file-protection.html">
+            
+                <a href="../general-concepts/configuration-file-protection.html">
+            
+                    
+                    配置文件保护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../general-concepts/dependencies.html">
+            
+                <a href="../general-concepts/dependencies.html">
+            
+                    
+                    依赖关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.4" data-path="../general-concepts/ebuild-revisions.html">
+            
+                <a href="../general-concepts/ebuild-revisions.html">
+            
+                    
+                    Ebuild 修订
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.5" data-path="../general-concepts/emerge-and-ebuild-relationships.html">
+            
+                <a href="../general-concepts/emerge-and-ebuild-relationships.html">
+            
+                    
+                    Emerge 和 Ebuild 关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.6" data-path="../general-concepts/features.html">
+            
+                <a href="../general-concepts/features.html">
+            
+                    
+                    特征
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.7" data-path="../general-concepts/filesystem.html">
+            
+                <a href="../general-concepts/filesystem.html">
+            
+                    
+                    文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.8" data-path="../general-concepts/git-to-rsync.html">
+            
+                <a href="../general-concepts/git-to-rsync.html">
+            
+                    
+                    从 Git 到 RSYNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.9" data-path="../general-concepts/install-destinations.html">
+            
+                <a href="../general-concepts/install-destinations.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.10" data-path="../general-concepts/licenses.html">
+            
+                <a href="../general-concepts/licenses.html">
+            
+                    
+                    许可
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.11" data-path="../general-concepts/manifest.html">
+            
+                <a href="../general-concepts/manifest.html">
+            
+                    
+                    Manifest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.12" data-path="../general-concepts/mirrors.html">
+            
+                <a href="../general-concepts/mirrors.html">
+            
+                    
+                    镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.13" data-path="../general-concepts/news-items.html">
+            
+                <a href="../general-concepts/news-items.html">
+            
+                    
+                    新闻项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.14" data-path="../general-concepts/overlay.html">
+            
+                <a href="../general-concepts/overlay.html">
+            
+                    
+                    Overlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.15" data-path="../general-concepts/package-collisions.html">
+            
+                <a href="../general-concepts/package-collisions.html">
+            
+                    
+                    软件包冲突
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.16" data-path="../general-concepts/package-maintainers.html">
+            
+                <a href="../general-concepts/package-maintainers.html">
+            
+                    
+                    软件包维护者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.17" data-path="../general-concepts/position-independent-code.html">
+            
+                <a href="../general-concepts/position-independent-code.html">
+            
+                    
+                    独立代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.18" data-path="../general-concepts/the-portage-cache.html">
+            
+                <a href="../general-concepts/the-portage-cache.html">
+            
+                    
+                    Portage 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.19" data-path="../general-concepts/projects.html">
+            
+                <a href="../general-concepts/projects.html">
+            
+                    
+                    项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.20" data-path="../general-concepts/sandbox.html">
+            
+                <a href="../general-concepts/sandbox.html">
+            
+                    
+                    沙盒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.21" data-path="../general-concepts/slotting.html">
+            
+                <a href="../general-concepts/slotting.html">
+            
+                    
+                    Slotting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.22" data-path="../general-concepts/the-gentoo-repository.html">
+            
+                <a href="../general-concepts/the-gentoo-repository.html">
+            
+                    
+                    Gentoo 存储库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.23" data-path="../general-concepts/use-flags.html">
+            
+                <a href="../general-concepts/use-flags.html">
+            
+                    
+                    USE 标志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.24" data-path="../general-concepts/user-environment.html">
+            
+                <a href="../general-concepts/user-environment.html">
+            
+                    
+                    用户环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.25" data-path="../general-concepts/virtuals.html">
+            
+                <a href="../general-concepts/virtuals.html">
+            
+                    
+                    虚拟
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../ebuild-writing/">
+            
+                <a href="../ebuild-writing/">
+            
+                    
+                    Ebuild 书写
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="../ebuild-writing/ebuild-file-format.html">
+            
+                <a href="../ebuild-writing/ebuild-file-format.html">
+            
+                    
+                    Ebuild 文件格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.2" data-path="../ebuild-writing/eapi-usage-and-description.html">
+            
+                <a href="../ebuild-writing/eapi-usage-and-description.html">
+            
+                    
+                    EAPI 用法和说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.3" data-path="../ebuild-writing/use-flag-conditional-code.html">
+            
+                <a href="../ebuild-writing/use-flag-conditional-code.html">
+            
+                    
+                    USE 标志条件代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.4" data-path="../ebuild-writing/error-handling.html">
+            
+                <a href="../ebuild-writing/error-handling.html">
+            
+                    
+                    错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.5" data-path="../ebuild-writing/users-and-groups.html">
+            
+                <a href="../ebuild-writing/users-and-groups.html">
+            
+                    
+                    用户和组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.6" data-path="../ebuild-writing/messages.html">
+            
+                <a href="../ebuild-writing/messages.html">
+            
+                    
+                    输出信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.7" data-path="../ebuild-writing/variables.html">
+            
+                <a href="../ebuild-writing/variables.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.8" data-path="../ebuild-writing/using-eclasses.html">
+            
+                <a href="../ebuild-writing/using-eclasses.html">
+            
+                    
+                    使用 Eclass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9" data-path="../ebuild-writing/ebuild-functions/">
+            
+                <a href="../ebuild-writing/ebuild-functions/">
+            
+                    
+                    Ebuild 函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.1" data-path="../ebuild-writing/ebuild-functions/pkg_pretend.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/pkg_pretend.html">
+            
+                    
+                    pkg_pretend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.2" data-path="../ebuild-writing/ebuild-functions/pkg_nofetch.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/pkg_nofetch.html">
+            
+                    
+                    pkg_nofetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.3" data-path="../ebuild-writing/ebuild-functions/pkg_setup.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/pkg_setup.html">
+            
+                    
+                    pkg_setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.4" data-path="../ebuild-writing/ebuild-functions/src_unpack/">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_unpack/">
+            
+                    
+                    src_unpack
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.4.1" data-path="../ebuild-writing/ebuild-functions/src_unpack/version-control-system-sources.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_unpack/version-control-system-sources.html">
+            
+                    
+                    版本控制(VCS)源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.4.2" data-path="../ebuild-writing/ebuild-functions/src_unpack/rpm-sources.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_unpack/rpm-sources.html">
+            
+                    
+                    RPM 来源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.4.3" data-path="../ebuild-writing/ebuild-functions/src_unpack/other-archive-formats.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_unpack/other-archive-formats.html">
+            
+                    
+                    其他档案格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.5" data-path="../ebuild-writing/ebuild-functions/src_prepare/">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_prepare/">
+            
+                    
+                    src_prepare
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.5.1" data-path="../ebuild-writing/ebuild-functions/src_prepare/patching-with-epatch-and-eapply.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_prepare/patching-with-epatch-and-eapply.html">
+            
+                    
+                    使用 epatch 修补并有效应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.5.2" data-path="../ebuild-writing/ebuild-functions/src_prepare/autopackage.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_prepare/autopackage.html">
+            
+                    
+                    自动打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.6" data-path="../ebuild-writing/ebuild-functions/src_configure/">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_configure/">
+            
+                    
+                    src_configure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.6.1" data-path="../ebuild-writing/ebuild-functions/src_configure/configuring-a-package.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_configure/configuring-a-package.html">
+            
+                    
+                    配置软件包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.7" data-path="../ebuild-writing/ebuild-functions/src_compile/">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_compile/">
+            
+                    
+                    src_compile
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.7.1" data-path="../ebuild-writing/ebuild-functions/src_compile/configuring-build-environment.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_compile/configuring-build-environment.html">
+            
+                    
+                    配置构建环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.7.2" data-path="../ebuild-writing/ebuild-functions/src_compile/building-a-package.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_compile/building-a-package.html">
+            
+                    
+                    构建一个包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.7.3" data-path="../ebuild-writing/ebuild-functions/src_compile/no-build-system.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_compile/no-build-system.html">
+            
+                    
+                    没有构建系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.8" data-path="../ebuild-writing/ebuild-functions/src_test.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_test.html">
+            
+                    
+                    src_test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.9" data-path="../ebuild-writing/ebuild-functions/src_install/">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_install/">
+            
+                    
+                    src_install
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.9.9.1" data-path="../ebuild-writing/ebuild-functions/src_install/controllable-compression.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/src_install/controllable-compression.html">
+            
+                    
+                    可控压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.10" data-path="../ebuild-writing/ebuild-functions/pkg_preinst.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/pkg_preinst.html">
+            
+                    
+                    pkg_preinst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.11" data-path="../ebuild-writing/ebuild-functions/pkg_postinst.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/pkg_postinst.html">
+            
+                    
+                    pkg_postinst
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.12" data-path="../ebuild-writing/ebuild-functions/pkg_prerm.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/pkg_prerm.html">
+            
+                    
+                    pkg_prerm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.13" data-path="../ebuild-writing/ebuild-functions/pkg_postrm.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/pkg_postrm.html">
+            
+                    
+                    pkg_postrm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.14" data-path="../ebuild-writing/ebuild-functions/pkg_config.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/pkg_config.html">
+            
+                    
+                    pkg_config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.9.15" data-path="../ebuild-writing/ebuild-functions/pkg_info.html">
+            
+                <a href="../ebuild-writing/ebuild-functions/pkg_info.html">
+            
+                    
+                    pkg_info
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.10" data-path="../ebuild-writing/miscellaneous-file/">
+            
+                <a href="../ebuild-writing/miscellaneous-file/">
+            
+                    
+                    杂项文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.10.1" data-path="../ebuild-writing/miscellaneous-file/package-and-category-metadata.xml.html">
+            
+                <a href="../ebuild-writing/miscellaneous-file/package-and-category-metadata.xml.html">
+            
+                    
+                    包和 metadata.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.10.2" data-path="../ebuild-writing/miscellaneous-file/patches.html">
+            
+                <a href="../ebuild-writing/miscellaneous-file/patches.html">
+            
+                    
+                    补丁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.11" data-path="../ebuild-writing/user-submitted-ebuilds.html">
+            
+                <a href="../ebuild-writing/user-submitted-ebuilds.html">
+            
+                    
+                    用户提交的 Ebuild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3.12" data-path="../ebuild-writing/common-mistakes.html">
+            
+                <a href="../ebuild-writing/common-mistakes.html">
+            
+                    
+                    常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../ebuild-maintenance/">
+            
+                <a href="../ebuild-maintenance/">
+            
+                    
+                    Ebuild 维护
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="../ebuild-maintenance/adding-a-new-ebuild.html">
+            
+                <a href="../ebuild-maintenance/adding-a-new-ebuild.html">
+            
+                    
+                    添加新的 Ebuild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="../ebuild-maintenance/git-for-gentoo-developers.html">
+            
+                <a href="../ebuild-maintenance/git-for-gentoo-developers.html">
+            
+                    
+                    适用于 Gentoo 开发人员的 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.3" data-path="../ebuild-maintenance/package-and-slot-moves.html">
+            
+                <a href="../ebuild-maintenance/package-and-slot-moves.html">
+            
+                    
+                    包装和 slot 移动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.4" data-path="../ebuild-maintenance/removing-ebuilds-and-packages.html">
+            
+                <a href="../ebuild-maintenance/removing-ebuilds-and-packages.html">
+            
+                    
+                    删除 Ebuild 和软件包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../eclass-writing-guide.html">
+            
+                <a href="../eclass-writing-guide.html">
+            
+                    
+                    Eclass 书写指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../profiles/">
+            
+                <a href="../profiles/">
+            
+                    
+                    个人文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.6.1" data-path="../profiles/profiles-categories-file.html">
+            
+                <a href="../profiles/profiles-categories-file.html">
+            
+                    
+                    个人文件 类别文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.2" data-path="../profiles/profiles-info_-files.html">
+            
+                <a href="../profiles/profiles-info_-files.html">
+            
+                    
+                    个人文件 info_文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.3" data-path="../profiles/profiles-package.mask-files.html">
+            
+                <a href="../profiles/profiles-package.mask-files.html">
+            
+                    
+                    个人文件 package.mask 文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.4" data-path="../profiles/profiles-packages-file.html">
+            
+                <a href="../profiles/profiles-packages-file.html">
+            
+                    
+                    个人文件 packages 文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.5" data-path="../profiles/profiles-updates-directory.html">
+            
+                <a href="../profiles/profiles-updates-directory.html">
+            
+                    
+                    个人文件 updates/目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.6" data-path="../profiles/profiles-use.desc-and-use.local.desc-files.html">
+            
+                <a href="../profiles/profiles-use.desc-and-use.local.desc-files.html">
+            
+                    
+                    个人文件 use.desc 和 use.local.desc 文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6.7" data-path="../profiles/profiles-use.mask-file.html">
+            
+                <a href="../profiles/profiles-use.mask-file.html">
+            
+                    
+                    个人文件 use.mask 文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../keywording-and-stabilization.html">
+            
+                <a href="../keywording-and-stabilization.html">
+            
+                    
+                    关键字和稳定化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="../tasks-reference/">
+            
+                <a href="../tasks-reference/">
+            
+                    
+                    任务参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.8.1" data-path="../tasks-reference/completion-files.html">
+            
+                <a href="../tasks-reference/completion-files.html">
+            
+                    
+                    完成任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8.2" data-path="../tasks-reference/environment-files.html">
+            
+                <a href="../tasks-reference/environment-files.html">
+            
+                    
+                    环境文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8.3" data-path="../tasks-reference/init-scripts.html">
+            
+                <a href="../tasks-reference/init-scripts.html">
+            
+                    
+                    初始化脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8.4" data-path="../tasks-reference/working-with-pam.html">
+            
+                <a href="../tasks-reference/working-with-pam.html">
+            
+                    
+                    使用 PAM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="../function-reference/">
+            
+                <a href="../function-reference/">
+            
+                    
+                    函数参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.9.1" data-path="../function-reference/build-functions-reference.html">
+            
+                <a href="../function-reference/build-functions-reference.html">
+            
+                    
+                    构建函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.2" data-path="../function-reference/error-functions-reference.html">
+            
+                <a href="../function-reference/error-functions-reference.html">
+            
+                    
+                    错误函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.3" data-path="../function-reference/install-functions-reference.html">
+            
+                <a href="../function-reference/install-functions-reference.html">
+            
+                    
+                    安装函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.4" data-path="../function-reference/message-functions-reference.html">
+            
+                <a href="../function-reference/message-functions-reference.html">
+            
+                    
+                    消息函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.5" data-path="../function-reference/query-functions-reference.html">
+            
+                <a href="../function-reference/query-functions-reference.html">
+            
+                    
+                    查询函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.6" data-path="../function-reference/sandbox-functions-reference.html">
+            
+                <a href="../function-reference/sandbox-functions-reference.html">
+            
+                    
+                    沙盒函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9.7" data-path="../function-reference/sandbox-functions-reference.html">
+            
+                <a href="../function-reference/sandbox-functions-reference.html">
+            
+                    
+                    沙盒函数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="../eclass-reference/">
+            
+                <a href="../eclass-reference/">
+            
+                    
+                    Eclass 参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="../tools-reference/">
+            
+                <a href="../tools-reference/">
+            
+                    
+                    工具参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.11.1" data-path="../tools-reference/bash-standard-shell.html">
+            
+                <a href="../tools-reference/bash-standard-shell.html">
+            
+                    
+                    bash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.2" data-path="../tools-reference/cat-file-concatenation.html">
+            
+                <a href="../tools-reference/cat-file-concatenation.html">
+            
+                    
+                    cat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.3" data-path="../tools-reference/cut-column-concatenation.html">
+            
+                <a href="../tools-reference/cut-column-concatenation.html">
+            
+                    
+                    cut
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.4" data-path="../tools-reference/diff-and-patch-file-differences.html">
+            
+                <a href="../tools-reference/diff-and-patch-file-differences.html">
+            
+                    
+                    diff 和 patch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.5" data-path="../tools-reference/echo-print-strings.html">
+            
+                <a href="../tools-reference/echo-print-strings.html">
+            
+                    
+                    echo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.6" data-path="../tools-reference/ekeyword-keywording.html">
+            
+                <a href="../tools-reference/ekeyword-keywording.html">
+            
+                    
+                    ekeyword
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.7" data-path="../tools-reference/false-and-true-generating-return-codes.html">
+            
+                <a href="../tools-reference/false-and-true-generating-return-codes.html">
+            
+                    
+                    false 和 true
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.8" data-path="../tools-reference/find-finding-files.html">
+            
+                <a href="../tools-reference/find-finding-files.html">
+            
+                    
+                    find
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.9" data-path="../tools-reference/grep-text-filtering.html">
+            
+                <a href="../tools-reference/grep-text-filtering.html">
+            
+                    
+                    grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.10" data-path="../tools-reference/head-and-tail-line-extraction.html">
+            
+                <a href="../tools-reference/head-and-tail-line-extraction.html">
+            
+                    
+                    head 和 tail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.11" data-path="../tools-reference/sed-stream-editor.html">
+            
+                <a href="../tools-reference/sed-stream-editor.html">
+            
+                    
+                    sed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.12" data-path="../tools-reference/sort-sorting-text.html">
+            
+                <a href="../tools-reference/sort-sorting-text.html">
+            
+                    
+                    sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.13" data-path="../tools-reference/tr-character-translation.html">
+            
+                <a href="../tools-reference/tr-character-translation.html">
+            
+                    
+                    tr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11.14" data-path="../tools-reference/uniq-filtering-duplicates.html">
+            
+                <a href="../tools-reference/uniq-filtering-duplicates.html">
+            
+                    
+                    uniq
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="../hosted-projects.html">
+            
+                <a href="../hosted-projects.html">
+            
+                    
+                    项目托管
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="../arch-specific-notes/">
+            
+                <a href="../arch-specific-notes/">
+            
+                    
+                    架构专用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.13.1" data-path="../arch-specific-notes/arch-specific-notes-alpha.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-alpha.html">
+            
+                    
+                    架构专用说明 - Alpha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13.2" data-path="../arch-specific-notes/arch-specific-notes-amd64-em64t.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-amd64-em64t.html">
+            
+                    
+                    架构专用说明 - AMD64/EM64T
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13.3" data-path="../arch-specific-notes/arch-specific-notes-mips.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-mips.html">
+            
+                    
+                    架构专用说明 - MIPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13.4" data-path="../arch-specific-notes/arch-specific-notes-ppc.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-ppc.html">
+            
+                    
+                    架构专用说明 - PPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13.5" data-path="../arch-specific-notes/arch-specific-notes-sparc.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-sparc.html">
+            
+                    
+                    架构专用说明 - SPARC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13.6" data-path="../arch-specific-notes/arch-specific-notes-x86.html">
+            
+                <a href="../arch-specific-notes/arch-specific-notes-x86.html">
+            
+                    
+                    架构专用说明 - x86
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.14.1" data-path="editor-configuration/">
+            
+                <a href="editor-configuration/">
+            
+                    
+                    编辑器配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.14.1.1" data-path="editor-configuration/configuring-vim-and-gvim.html">
+            
+                <a href="editor-configuration/configuring-vim-and-gvim.html">
+            
+                    
+                    配置 vim 和 gvim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.1.2" data-path="editor-configuration/configuring-gnu-emacs.html">
+            
+                <a href="editor-configuration/configuring-gnu-emacs.html">
+            
+                    
+                    配置 GNU Emacs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.1.3" data-path="editor-configuration/configuring-xemacs-for-utf-8.html">
+            
+                <a href="editor-configuration/configuring-xemacs-for-utf-8.html">
+            
+                    
+                    配置 XEmacs UTF-8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.2" data-path="common-problems.html">
+            
+                <a href="common-problems.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.3" data-path="further-reading.html">
+            
+                <a href="further-reading.html">
+            
+                    
+                    进一步阅读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.4" data-path="contributing-to-this-document.html">
+            
+                <a href="contributing-to-this-document.html">
+            
+                    
+                    对本文档的贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.14.5" data-path="gentoo-devbook-xml-guide.html">
+            
+                <a href="gentoo-devbook-xml-guide.html">
+            
+                    
+                    Gentoo DevBook XML 指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.6" data-path="contributions.html">
+            
+                <a href="contributions.html">
+            
+                    
+                    贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14.7" data-path="todo-list.html">
+            
+                <a href="todo-list.html">
+            
+                    
+                    TODO 清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Gentoo DevBook XML 指南</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="gentoo-devbook-xml-&#x6307;&#x5357;">Gentoo DevBook XML &#x6307;&#x5357;</h1>
+<h2 id="devbook-xml-&#x8BBE;&#x8BA1;&#x76EE;&#x6807;">DevBook XML &#x8BBE;&#x8BA1;&#x76EE;&#x6807;</h2>
+<p>DevBook XML &#x8BED;&#x6CD5;&#x8F7B;&#x5DE7;&#x4F46;&#x6613;&#x4E8E;&#x8868;&#x8FBE;&#xFF0C;&#x56E0;&#x6B64;&#x6613;&#x4E8E;&#x5B66;&#x4E60;&#xFF0C;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x521B;&#x5EFA; Web &#x6587;&#x6863;&#x6240;&#x9700;&#x7684;&#x6240;&#x6709;&#x51FD;&#x6570;&#x3002;&#x6807;&#x7B7E;&#x6570;&#x91CF;&#x4FDD;&#x6301;&#x5728;&#x6700;&#x4F4E;&#x9650;&#x5EA6; &#x2014;&#x2014; &#x521A;&#x597D;&#x662F;&#x90A3;&#x4E9B;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x3002;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x5C06;&#x6307;&#x5357;&#x8F6C;&#x6362;&#x4E3A;&#x5176;&#x4ED6;&#x683C;&#x5F0F;&#xFF0C;&#x4F8B;&#x5982; DocBook XML/SGML &#x6216;&#x53EF;&#x7528;&#x4E8E; Web &#x7684; HTML&#x3002;</p>
+<p>&#x76EE;&#x6807;&#x662F;&#x4F7F;<em>&#x521B;&#x5EFA;&#x548C;&#x8F6C;&#x6362;</em>DevBook XML &#x6587;&#x6863;&#x53D8;&#x5F97;&#x5BB9;&#x6613;&#x3002;</p>
+<h2 id="devbook-xml">Devbook XML</h2>
+<h3 id="&#x57FA;&#x672C;&#x7ED3;&#x6784;">&#x57FA;&#x672C;&#x7ED3;&#x6784;</h3>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5B66;&#x4E60; DevBook XML &#x8BED;&#x6CD5;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x4ECE; DevBook XML &#x6587;&#x6863;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x521D;&#x59CB;&#x6807;&#x7B7E;&#x5F00;&#x59CB;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;UTF-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">guide</span> <span class="hljs-attr">self</span>=<span class="hljs-string">&quot;appendices/devbook-guide/&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">chapter</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Gentoo DevBook XML Guide<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+</code></pre>
+<p>&#x5728;&#x7B2C;&#x4E00;&#x884C;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E86;&#x5FC5;&#x9700;&#x7684;&#x6807;&#x7B7E;&#xFF0C;&#x8BE5;&#x6807;&#x7B7E;&#x5C06;&#x5176;&#x6807;&#x8BC6;&#x4E3A; XML &#x6587;&#x6863;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;<code>&lt;guide&gt;</code>&#x6807;&#x7B7E; &#x2014;&#x2014; &#x6574;&#x4E2A;&#x6587;&#x6863;&#x5305;&#x542B;&#x5728; &#x4E00; <code>&lt;guide&gt; &lt;/guide&gt;</code>&#x5BF9;&#x4E2D;&#x3002;&#x5B83;&#x7684; <code>self</code> &#x5C5E;&#x6027;&#x5FC5;&#x987B;&#x6307;&#x5411;&#x6587;&#x6863;&#x4ECE;&#x6839;&#x8282;&#x70B9;&#x5F00;&#x59CB;&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x8DEF;&#x5F84;&#x4E3A;<code>appendices/devbook-guide/</code>&#x3002;&#x6839;&#x8282;&#x70B9;&#x672C;&#x8EAB;&#x662F;&#x4E00;&#x4E2A;&#x4F8B;&#x5916;&#xFF0C;&#x800C;&#x6839;&#x8282;&#x70B9;&#x672C;&#x8EAB;&#x5177;&#x6709;<code>&lt;guide root=&quot;true&quot;&gt;</code>&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;<code>&lt;chapter&gt;</code>&#x6807;&#x7B7E;&#x3002;&#x6BCF;&#x4E2A;&#x6587;&#x6863;&#x5FC5;&#x987B;&#x53EA;&#x6709;&#x4E00;&#x7AE0;&#x3002;<code>&lt;title&gt;</code>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x6574;&#x4E2A;&#x6587;&#x6863;&#x7684;&#x6807;&#x9898;&#x3002;</p>
+<div class="alert alert-important">
+<b>&#x91CD;&#x8981;&#x63D0;&#x793A;</b>&#xFF1A;<code>&lt;title&gt;</code>&#x5143;&#x7D20;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x6362;&#x884C;&#x7B26;&#x3002;&#x786E;&#x4FDD;&#x5B83;&#x5728;&#x4E00;&#x884C;&#x4E2D;&#xFF0C;&#x5305;&#x62EC;&#x5176;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x6807;&#x8BB0;&#x3002;
+</div>
+
+<p>&#x5F53;&#x7136;&#xFF0C;&#x6240;&#x6709;&#x6807;&#x7B7E;&#x90FD;&#x5FC5;&#x987B;&#x5173;&#x95ED;&#xFF0C;&#x56E0;&#x6B64;&#x6587;&#x6863;&#x7684;&#x7ED3;&#x5C3E;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">chapter</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">guide</span>&gt;</span>
+</code></pre>
+<h3 id="&#x5404;&#x8282;&#x548C;&#x5C0F;&#x8282;">&#x5404;&#x8282;&#x548C;&#x5C0F;&#x8282;</h3>
+<p>&#x4E00;&#x65E6;&#x6307;&#x5B9A;&#x4E86;&#x521D;&#x59CB;&#x6807;&#x7B7E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x6DFB;&#x52A0;&#x6587;&#x6863;&#x7684;&#x7ED3;&#x6784;&#x5143;&#x7D20;&#x4E86;&#x3002;&#x5404;&#x7AE0;&#x5206;&#x4E3A;&#x51E0;&#x8282;&#xFF1B;&#x6BCF;&#x4E2A;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B50;&#x90E8;&#x5206;&#xFF0C;&#x5176;&#x4E2D;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B50;&#x5B50;&#x90E8;&#x5206;&#x3002;&#x8282;&#xFF0C;&#x5C0F;&#x8282;&#x548C;&#x5C0F;&#x8282;&#x5143;&#x7D20;&#x5FC5;&#x987B;&#x5177;&#x6709;&#x6807;&#x9898;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x4E00;&#x4E2A;&#x5C0F;&#x8282;&#x7684;&#x793A;&#x4F8B;&#x8282;&#xFF0C;&#x7531;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#x7EC4;&#x6210;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>This is my section<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">subsection</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>This is subsection one of my section<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+This is the actual text content of my subsection.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">subsection</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+</code></pre>
+<p>&#x5728;&#x4E0A;&#x9762;&#xFF0C;&#x6211;&#x901A;&#x8FC7;&#x5411;<code>&lt;title&gt;</code>&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5B50;&#x5143;&#x7D20;&#x6765;&#x8BBE;&#x7F6E;&#x8282;&#x6807;&#x9898;<code>&lt;section&gt;</code>&#x3002;&#x7136;&#x540E;&#xFF0C;&#x6211;&#x901A;&#x8FC7;&#x6DFB;&#x52A0;<code>&lt;subsection&gt;</code>&#x5143;&#x7D20;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x5C0F;&#x8282;&#x3002;&#x5982;&#x679C;&#x4F60;&#x67E5;&#x770B;<code>&lt;subsection&gt;</code>&#x5143;&#x7D20;&#x7684;&#x5185;&#x90E8; &#xFF0C;&#x5C06;&#x4F1A;&#x770B;&#x5230;&#x5B83;&#x5177;&#x6709;&#x4E24;&#x4E2A;&#x5B50;&#x5143;&#x7D20; &#x2014;&#x2014; <code>&lt;title&gt;</code>&#x548C; <code>&lt;body&gt;</code>&#x3002;&#x5C3D;&#x7BA1;<code>&lt;title&gt;</code>&#x5E76;&#x4E0D;&#x662F;&#x4EC0;&#x4E48;&#x65B0;&#x9C9C;&#x4E8B;&#x7269;&#xFF0C;&#x4F46;&#x662F;<code>&lt;body&gt;</code> &#x2014;&#x2014; &#x5B83;&#x5305;&#x542B;&#x6B64;&#x7279;&#x5B9A;&#x5C0F;&#x8282;&#x7684;&#x5B9E;&#x9645;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x7A0D;&#x7B49;&#x4E00;&#x4E0B;<code>&lt;body&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x7684;&#x6807;&#x7B7E;&#x3002;</p>
+<div class="alert alert-note">
+<b>&#x6CE8;&#x610F;</b>&#xFF1A; <code>&lt;chapter&gt;</code>&#xFF0C;<code>&lt;section&gt;</code>&#xFF0C;<code>&lt;subsection&gt;</code>&#x548C;<code>&lt;subsubsection&gt;</code>&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E00;&#x4E2A;<code>&lt;body&gt;</code>&#x548C;/&#x6216;&#x4EFB;&#x4F55;&#x6570;&#x76EE;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8F83;&#x4F4E;&#x7EA7;&#x522B;&#x7684;&#x90E8;&#x5206;&#x5143;&#x4EF6;&#x3002;&#x4E0D;&#x5141;&#x8BB8;&#x8DF3;&#x8FC7;&#x7EA7;&#x522B;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x5C0F;&#x8282;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4F4D;&#x4E8E;&#x7AE0;&#x8282;&#x7684;&#x4E0B;&#x65B9;&#x3002;
+</div>
+
+<h3 id="&#x5305;&#x62EC;&#x5B50;&#x6587;&#x4EF6;">&#x5305;&#x62EC;&#x5B50;&#x6587;&#x4EF6;</h3>
+<p>&#x8BE5;&#x624B;&#x518C;&#x4EE5; tree &#x72B6;&#x7EC4;&#x7EC7;&#x3002;&#x6BCF;&#x4E2A;&#x76EE;&#x5F55;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#xFF0C;&#x4F7F;&#x7528;<code>&lt;include href=&quot;foo/&quot;/&gt;</code> &#x6807;&#x7B7E;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x5B50;&#x6587;&#x6863;&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;<code>href</code> &#x503C;&#x4E2D;&#x7684;&#x5C3E;&#x90E8;&#x659C;&#x6760;&#x662F;&#x5FC5;&#x9700;&#x7684;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x751F;&#x6210;&#x76EE;&#x5F55;<code>&lt;contentsTree&gt;</code>&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x6B64;&#x6807;&#x8BB0;&#x5C06;&#x662F;&#x5176;&#x81EA;&#x5DF1;&#x7684;&#x8282;&#x4E3B;&#x4F53;&#x4E2D;&#x7684;&#x552F;&#x4E00;&#x5143;&#x7D20;&#xFF0C;&#x5982;&#x4EE5;&#x4E0B;&#x793A;&#x4F8B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Contents<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">contentsTree</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+</code></pre>
+<h2 id="&#x4E00;&#x4E2A;body&#x4F8B;&#x5B50;">&#x4E00;&#x4E2A;<code>&lt;body&gt;</code>&#x4F8B;&#x5B50;</h2>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x8BE5;&#x5B66;&#x4E60;&#x5982;&#x4F55;&#x6807;&#x8BB0;&#x5B9E;&#x9645;&#x5185;&#x5BB9;&#x4E86;&#x3002;&#x8FD9;&#x662F;&#x793A;&#x4F8B;<code>&lt;body&gt;</code>&#x5143;&#x7D20;&#x7684; XML &#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+This is a paragraph. <span class="hljs-tag">&lt;<span class="hljs-name">c</span>&gt;</span>/etc/passwd<span class="hljs-tag">&lt;/<span class="hljs-name">c</span>&gt;</span> is a file.
+<span class="hljs-tag">&lt;<span class="hljs-name">uri</span>&gt;</span>https://forums.gentoo.org/<span class="hljs-tag">&lt;/<span class="hljs-name">uri</span>&gt;</span> is my favorite website.
+Type <span class="hljs-tag">&lt;<span class="hljs-name">c</span>&gt;</span>ls<span class="hljs-tag">&lt;/<span class="hljs-name">c</span>&gt;</span> if you feel like it. I <span class="hljs-tag">&lt;<span class="hljs-name">e</span>&gt;</span>really<span class="hljs-tag">&lt;/<span class="hljs-name">e</span>&gt;</span> want to go to sleep now.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span>
+This is text output or code.
+# this is user input
+<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">codesample</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;sgml&quot;</span>&gt;</span>
+Make HTML/XML easier to read by using selective emphasis:
+&amp;lt;foo&amp;gt;bar&amp;lt;/foo&amp;gt;
+<span class="hljs-tag">&lt;/<span class="hljs-name">codesample</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">note</span>&gt;</span>
+This is a note.
+<span class="hljs-tag">&lt;/<span class="hljs-name">note</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">important</span>&gt;</span>
+This is important.
+<span class="hljs-tag">&lt;/<span class="hljs-name">important</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">warning</span>&gt;</span>
+This is a warning.
+<span class="hljs-tag">&lt;/<span class="hljs-name">warning</span>&gt;</span>
+</code></pre>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x8FD9;&#x662F;<code>&lt;body&gt;</code>&#x4E0A;&#x9762;&#x5143;&#x7D20;&#x7684;&#x5448;&#x73B0;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x3002;<code>/etc/passwd</code> &#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x3002; <a href="https://forums.gentoo.org/" target="_blank">https://forums.gentoo.org/</a>&#x662F;&#x6211;&#x6700;&#x559C;&#x6B22;&#x7684;&#x7F51;&#x7AD9;&#x3002;&#x5982;&#x679C;&#x4F60;&#x559C;&#x6B22;&#x5C31;&#x8F93;&#x5165;<code>ls</code>&#x3002;&#x6211;&#x73B0;&#x5728;<em>&#x771F;&#x7684;</em>&#x5F88;&#x60F3;&#x7761;&#x89C9;&#x3002;</p>
+<pre><code class="lang-bash">This is text output or code.
+<span class="hljs-comment"># this is user input</span>
+</code></pre>
+<pre><code class="lang-bash">Make HTML/XML easier to <span class="hljs-built_in">read</span> by using selective emphasis:
+&lt;foo&gt;bar&lt;/foo&gt;
+</code></pre>
+<div class="alert alert-note">
+<b>&#x6CE8;&#x610F;</b>&#xFF1A; &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3002;
+</div>
+
+<div class="alert alert-important">
+<b>&#x91CD;&#x8981;</b>&#xFF1A;&#x8FD9;&#x5F88;&#x91CD;&#x8981;&#x3002;
+</div>
+
+<div class="alert alert-warning">
+<b>&#x8B66;&#x544A;</b>&#xFF1A;&#x8FD9;&#x662F;&#x8B66;&#x544A;&#x3002;
+</div>
+
+<h3 id="body&#x6807;&#x7B7E;"><code>&lt;body&gt;</code>&#x6807;&#x7B7E;</h3>
+<p>&#x5728;&#x4E0A;&#x4E00;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5F15;&#x5165;&#x4E86;&#x8BB8;&#x591A;&#x65B0;&#x6807;&#x7B7E; &#x2014;&#x2014; &#x8FD9;&#x662F;&#x4F60;&#x9700;&#x8981;&#x77E5;&#x9053;&#x7684;&#x3002;<code>&lt;p&gt;</code>&#xFF08;&#x6BB5;&#xFF09;&#xFF0C; <code>&lt;pre&gt;</code> &#xFF08;&#x9884;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x5757;&#xFF09;&#xFF0C; <code>&lt;codesample&gt;</code>&#xFF08;&#x4EE3;&#x7801;&#x5757;&#xFF09;&#xFF0C; <code>&lt;note&gt;</code>&#xFF0C;<code>&lt;important&gt;</code>&#x548C;<code>&lt;warning&gt;</code>&#x6807;&#x7B7E;&#x90FD;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x6587;&#x672C;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x884C;&#x3002;&#x9664;&#x4E86;<code>&lt;figure&gt;</code>&#xFF0C; <code>&lt;table&gt;</code>&#xFF0C;<code>&lt;ul&gt;</code>&#xFF0C;<code>&lt;ol&gt;</code> &#x548C;<code>&lt;dl&gt;</code>&#x5143;&#x7D20;&#xFF08;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x7A0D;&#x540E;&#x4ECB;&#x7ECD;&#xFF09;&#xFF0C;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x5E94;&#x8BE5;&#x7ACB;&#x5373;&#x51FA;&#x73B0;&#x4E00;&#x4E2A;&#x5185;&#x552F;&#x4E00;&#x7684;&#x6807;&#x7B7E;<code>&lt;body&gt;</code>&#x5143;&#x7D20;&#x3002;&#x53E6;&#x4E00;&#x4EF6;&#x4E8B; &#x2014;&#x2014; &#x8FD9;&#x4E9B;&#x6807;&#x7B7E;&#x4E0D;&#x5E94;&#x5806;&#x53E0; &#x2014;&#x2014; &#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x4E0D;&#x8981;&#x5C06;<code>&lt;note&gt;</code>&#x5143;&#x7D20;&#x653E;&#x5728;&#x5143;&#x7D20;<code>&lt;p&gt;</code>&#x5185;&#x3002;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x731C;&#x5230;&#xFF0C;<code>&lt;pre&gt;</code>&#x548C;<code>&lt;codesample&gt;</code>&#x5143;&#x7D20;&#x5B8C;&#x5168;&#x4FDD;&#x7559;&#x5176;&#x7A7A;&#x767D;&#xFF0C;&#x4F7F;&#x5176;&#x975E;&#x5E38;&#x9002;&#x5408;&#x4EE3;&#x7801;&#x6458;&#x5F55;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span>
+# uptime
+16:50:47 up 164 days,  2:06,  5 users,  load average: 0.23, 0.20, 0.25
+<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+</code></pre>
+<h3 id="c&#xFF0C;b&#x548C;e"><code>&lt;c&gt;</code>&#xFF0C;<code>&lt;b&gt;</code>&#x548C;<code>&lt;e&gt;</code></h3>
+<p><code>&lt;c&gt;</code>&#x5143;&#x7D20;&#x7528;&#x4E8E;&#x6807;&#x8BB0;<em>&#x547D;&#x4EE4;&#x6216;&#x7528;&#x6237;&#x8F93;&#x5165;</em>&#x3002;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;<code>&lt;c&gt;</code>&#x662F;&#x4E00;&#x79CD;&#x63D0;&#x9192;&#x8BFB;&#x8005;&#x6CE8;&#x610F;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x8F93;&#x5165;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#x6765;&#x6267;&#x884C;&#x67D0;&#x79CD;&#x64CD;&#x4F5C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x663E;&#x793A;&#x7684;&#x6240;&#x6709; XML &#x6807;&#x7B7E;&#x90FD;&#x5305;&#x542B;&#x5728;&#x4E00;&#x4E2A;<code>&lt;c&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x8868;&#x793A;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x952E;&#x5165;&#x7684;&#x5185;&#x5BB9;&#x800C;&#x4E0D;&#x662F;&#x8DEF;&#x5F84;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528;<code>&lt;c&gt;</code>&#x5143;&#x7D20;&#xFF0C;&#x4F60;&#x5C06;&#x5E2E;&#x52A9;&#x8BFB;&#x8005;&#x5FEB;&#x901F;&#x8BC6;&#x522B;&#x9700;&#x8981;&#x952E;&#x5165;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x7531;&#x4E8E;<code>&lt;c&gt;</code>&#x5143;&#x7D20;&#x5DF2;&#x7ECF;&#x4E0E;&#x5E38;&#x89C4;&#x6587;&#x672C;&#x53D1;&#x751F;&#x504F;&#x79FB;&#xFF0C;<em>&#x56E0;&#x6B64;&#x51E0;&#x4E4E;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x7528;&#x6237;&#x8F93;&#x5165;&#x4E2D;&#x7528;&#x53CC;&#x5F15;&#x53F7;&#x5F15;&#x8D77;&#x6765;</em>&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8BF7;&#x52FF;&#x5F15;&#x7528;&#x201C;<code>&lt;c&gt;</code>&#x201D;&#xFF0C;&#x5C31;&#x50CF;&#x6211;&#x5728;&#x8FD9;&#x53E5;&#x8BDD;&#x4E2D;&#x6240;&#x505A;&#x7684;&#x90A3;&#x6837;&#x3002;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x53CC;&#x5F15;&#x53F7;&#x4F7F;&#x6587;&#x6863;&#x66F4;&#x6613;&#x8BFB;&#x2014;&#x7F8E;&#x89C2;&#xFF01;</p>
+<p>&#x6B63;&#x5982;&#x4F60;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x731C;&#x5230;&#x7684;&#xFF0C;<code>&lt;b&gt;</code>&#x5B83;&#x7528;&#x6765;<strong>&#x52A0;&#x7C97;</strong>&#x4E00;&#x4E9B;&#x6587;&#x672C;&#x3002;</p>
+<p><code>&lt;e&gt;</code>&#x7528;&#x4E8E;&#x5F3A;&#x8C03;&#x5355;&#x8BCD;&#x6216;&#x77ED;&#x8BED;&#xFF1B;&#x4F8B;&#x5982;&#xFF1A;&#x6211;<em>&#x786E;&#x5B9E;</em>&#x5E94;&#x8BE5;&#x66F4;&#x9891;&#x7E41;&#x5730;&#x4F7F;&#x7528;&#x5206;&#x53F7;&#x3002;&#x5982;&#x4F60;&#x6240;&#x89C1;&#xFF0C;&#x6B64;&#x6587;&#x672C;&#x4E0E;&#x5E38;&#x89C4;&#x6BB5;&#x843D;&#x7C7B;&#x578B;&#x6709;&#x6240;&#x504F;&#x79BB;&#xFF0C;&#x4EE5;&#x5F3A;&#x8C03;&#x3002;&#x8FD9;&#x6709;&#x52A9;&#x4E8E;&#x7ED9;&#x4F60;&#x7684;&#x6563;&#x6587;&#x66F4;&#x591A;&#x7684;<em>&#x51B2;&#x51FB;&#x529B;</em>&#xFF01;</p>
+<h3 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#x548C;&#x989C;&#x8272;&#x7F16;&#x7801;">&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#x548C;&#x989C;&#x8272;&#x7F16;&#x7801;</h3>
+<p><code>&lt;pre&gt;</code>&#x6807;&#x8BB0;&#x4E0D;&#x652F;&#x6301;&#x4EFB;&#x4F55;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;&#x3002;&#x5F53;&#x4F60;&#x9700;&#x8981;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;&#x65F6;&#xFF0C;&#x8BF7;&#x5C06;<code>&lt;codesample&gt;</code>&#x6807;&#x8BB0;&#x4E0E;&#x4E00;&#x4E2A; <code>lang</code> &#x5C5E;&#x6027;&#x4E00;&#x8D77;&#x4F7F;&#x7528; &#x2014;&#x2014; &#x901A;&#x5E38;&#xFF0C;&#x60A8;&#x5E0C;&#x671B;&#x5C06;&#x6B64;&#x8BBE;&#x7F6E;&#x4E3A;<code>&#x201C;ebuild&#x201D;</code>&#x4EE5;&#x9AD8;&#x4EAE; ebuild &#x4EE3;&#x7801;&#x6BB5;&#x7684;&#x8BED;&#x6CD5;&#x3002;&#x5F53;&#x524D;&#xFF0C;&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x8BED;&#x8A00;&#xFF1A;</p>
+<ul>
+<li>C</li>
+<li>ebuild</li>
+<li>make</li>
+<li>m4</li>
+<li>sgml</li>
+</ul>
+<div class="alert alert-note">
+<b>&#x6CE8;&#x610F;</b>&#xFF1A; &#x8BF7;&#x8BB0;&#x4F4F;&#xFF0C;&#x6240;&#x6709;&#x524D;&#x5BFC;&#x548C;&#x5C3E;&#x968F;&#x7A7A;&#x683C;&#x4EE5;&#x53CA;<code>&lt;codesample&gt;</code>&#x5757;&#x4E2D;&#x7684;&#x6362;&#x884C;&#x7B26; &#x5C06;&#x51FA;&#x73B0;&#x5728;&#x663E;&#x793A;&#x7684;html&#x9875;&#x9762;&#x4E2D;&#x3002;
+</div>
+
+<p>&#x6837;&#x672C;<code>&lt;codesample lang=&quot;c&quot;&gt;</code>&#x5757;&#xFF1A;</p>
+<pre><code class="lang-C"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+
+main()
+{
+    <span class="hljs-comment">/* This is a comment */</span>
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello, world!\n&quot;</span>);
+}
+</code></pre>
+<p>&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A; <code>numbering=&quot;lines&quot;</code>&#x542F;&#x7528;&#x884C;&#x7F16;&#x53F7;&#xFF0C;&#x5982;&#x4EE5;&#x4E0B;&#x793A;&#x4F8B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-bash">01: <span class="hljs-comment"># Copyright 1999-2020 Gentoo Authors</span>
+02: <span class="hljs-comment"># Distributed under the terms of the GNU General Public License v2</span>
+03:
+04: EAPI=7
+05:
+06: DESCRIPTION=<span class="hljs-string">&quot;MicroGnuEmacs, a port from the BSDs&quot;</span>
+07: HOMEPAGE=<span class="hljs-string">&quot;https://homepage.boetes.org/software/mg/&quot;</span>
+08: SRC_URI=<span class="hljs-string">&quot;https://github.com/hboetes/<span class="hljs-variable">${PN}</span>/archive/<span class="hljs-variable">${PV}</span>.tar.gz -&gt; <span class="hljs-variable">${P}</span>.tar.gz&quot;</span>
+09:
+10: LICENSE=<span class="hljs-string">&quot;public-domain&quot;</span>
+11: SLOT=<span class="hljs-string">&quot;0&quot;</span>
+12: KEYWORDS=<span class="hljs-string">&quot;alpha amd64 arm hppa ppc ~ppc64 sparc x86&quot;</span>
+13:
+14: RDEPEND=<span class="hljs-string">&quot;sys-libs/ncurses:0=
+15:     &gt;=dev-libs/libbsd-0.7.0&quot;</span>
+16: DEPEND=<span class="hljs-string">&quot;<span class="hljs-variable">${RDEPEND}</span>&quot;</span>
+17: BDEPEND=<span class="hljs-string">&quot;virtual/pkgconfig&quot;</span>
+18:
+19: <span class="hljs-function"><span class="hljs-title">src_install</span></span>()  {
+20:     dobin mg
+21:     doman mg.1
+22:     dodoc README tutorial
+23: }
+</code></pre>
+<h3 id="uri"><code>&lt;uri&gt;</code></h3>
+<p><code>&lt;uri&gt;</code>&#x6807;&#x8BB0;&#x7528;&#x4E8E;&#x6307;&#x5411; Internet &#x4E0A;&#x7684;&#x6587;&#x4EF6;/&#x4F4D;&#x7F6E;&#x3002;&#x5B83;&#x6709;&#x4E24;&#x79CD;&#x5F62;&#x5F0F; &#x2014;&#x2014; &#x7B2C;&#x4E00;&#x79CD;&#x5F62;&#x5F0F;&#x53EF;&#x4EE5;&#x5728;&#x6B63;&#x6587;&#x4E2D;&#x663E;&#x793A;&#x5B9E;&#x9645; URI &#x65F6;&#x4F7F;&#x7528;&#xFF0C;&#x4F8B;&#x5982;&#x6307;&#x5411;<a href="https://forums.gentoo.org/" target="_blank">https://forums.gentoo.org/</a>&#x7684;&#x94FE;&#x63A5;&#x3002;&#x8981;&#x521B;&#x5EFA;&#x6B64;&#x94FE;&#x63A5;&#xFF0C;&#x6211;&#x8F93;&#x5165;&#x4E86;<code>&lt;uri&gt;https://forums.gentoo.org/&lt;/uri&gt;</code>&#x3002;&#x53E6;&#x4E00;&#x79CD;&#x5F62;&#x5F0F;&#x662F;&#x5F53;&#x60A8;&#x8981;&#x5C06; URI &#x4E0E;&#x5176;&#x4ED6;&#x6587;&#x672C;&#xFF08;&#x4F8B;&#x5982;<a href="https://forums.gentoo.org/" target="_blank">Gentoo &#x8BBA;&#x575B;</a>&#xFF09;&#x76F8;&#x5173;&#x8054;&#x65F6;&#x3002;&#x8981;&#x521B;&#x5EFA;&#x6B64;&#x94FE;&#x63A5;&#xFF0C;&#x6211;&#x8F93;&#x5165;&#x4E86;<code>&lt;uri link =&quot;https://forums.gentoo.org/&quot;&gt; Gentoo Forums&lt;/uri&gt;</code>&#x3002;</p>
+<p>&#x8BF7;&#x907F;&#x514D;<a href="https://www.w3.org/QA/Tips/noClickHere" target="_blank">W3C</a>&#x5EFA;&#x8BAE;&#x7684;<a href="https://en.wikipedia.org/wiki/Click_here" target="_blank">&#x5355;&#x51FB;&#x6B64;&#x5904;&#x7EFC;&#x5408;&#x75C7;</a>&#x3002;</p>
+<h3 id="&#x56FE;&#x50CF;">&#x56FE;&#x50CF;</h3>
+<p>&#x8FD9;&#x662F;&#x5C06;&#x56FE;&#x5F62;&#x63D2;&#x5165;&#x6587;&#x6863;&#x7684;&#x65B9;&#x6CD5; &#x2014;&#x2014; <code>&lt;figure link=&quot;mygfx.png&quot; short=&quot;my picture&quot; caption=&quot;my favorite picture of all time&quot;/&gt;</code>&#x3002;<code>link</code>&#x5C5E;&#x6027;&#x6307;&#x5411;&#x5B9E;&#x9645;&#x7684;&#x56FE;&#x5F62;&#x56FE;&#x50CF;&#xFF0C;<code>short</code>&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x7B80;&#x77ED;&#x63CF;&#x8FF0;&#xFF08;&#x5F53;&#x524D;&#x7528;&#x4E8E;&#x56FE;&#x50CF;&#x7684; HTML <code>alt</code>&#x5C5E;&#x6027;&#xFF09;&#x548C;&#x6807;&#x9898;&#x3002;&#x4E0D;&#x592A;&#x56F0;&#x96BE;:)&#x6211;&#x4EEC;&#x8FD8;&#x652F;&#x6301;&#x6807;&#x51C6; HTML &#x6837;&#x5F0F;&#x7684;<code>&lt;img src =&quot;foo.gif&quot;/&gt;</code>&#x6807;&#x8BB0;&#xFF0C;&#x7528;&#x4E8E;&#x6DFB;&#x52A0;&#x4E0D;&#x5E26;&#x6807;&#x9898;&#xFF0C;&#x8FB9;&#x6846;&#x7B49;&#x7684;&#x56FE;&#x50CF;&#x3002;</p>
+<h3 id="&#x8868;&#x683C;">&#x8868;&#x683C;</h3>
+<p>DevBook XML &#x652F;&#x6301;&#x7C7B;&#x4F3C;&#x4E8E; HTML &#x7684;&#x7B80;&#x5316;&#x8868;&#x8BED;&#x6CD5;&#x3002;&#x8981;&#x521B;&#x5EFA;&#x8868;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;<code>&lt;table&gt;</code>&#x6807;&#x8BB0;&#x3002;&#x7528;<code>&lt;tr&gt;</code>&#x6807;&#x8BB0;&#x5F00;&#x59CB;&#x4E00;&#x884C;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5BF9;&#x4E8E;&#x63D2;&#x5165;&#x5B9E;&#x9645;&#x7684;&#x8868;&#x6570;&#x636E;&#xFF0C;&#x6211;&#x4EEC;<em>&#x4E0D;&#x652F;&#x6301;</em> HTML <code>&lt;td&gt;</code>&#x6807;&#x8BB0;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x63D2;&#x5165;&#x6807;&#x5934;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;<code>&lt;th&gt;</code>&#xFF1B;&#x5982;&#x679C;&#x8981;&#x63D2;&#x5165;&#x666E;&#x901A;&#x4FE1;&#x606F;&#x5757;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;<code>&lt;ti&gt;</code>&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>&lt;ti&gt;</code>&#x7684;&#x4EFB;&#x4F55;&#x4F4D;&#x7F6E;&#x4F7F;&#x7528;<code>&lt;th&gt;</code> &#x2014;&#x2014; &#x65E0;&#x9700;<code>&lt;th&gt;</code>&#x5143;&#x7D20;&#x4EC5;&#x51FA;&#x73B0;&#x5728;&#x7B2C;&#x4E00;&#x884C;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x8868;&#x6807;&#x9898;&#xFF08;<code>&lt;th&gt;</code>&#xFF09;&#x548C;&#x8868;&#x9879;&#x76EE;&#xFF08;<code>&lt;ti&gt;</code>&#xFF09;&#x90FD;&#x63A5;&#x53D7;<code>colspan</code>&#x548C;<code>rowspan</code>&#x5C5E;&#x6027;&#xFF0C;&#x4EE5;&#x5C06;&#x5176;&#x5185;&#x5BB9;&#x8DE8;&#x884C;&#xFF0C;&#x8DE8;&#x5217;&#x6216;&#x8DE8;&#x8FD9;&#x4E24;&#x8005;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x8868;&#x5355;&#x5143;&#x683C;&#xFF08;<code>&lt;ti&gt;</code>&amp;<code>&lt;th&gt;</code>&#xFF09;&#x53EF;&#x4EE5;&#x4E0E;<code>align</code>&#x5C5E;&#x6027;&#x53F3;&#x5BF9;&#x9F50;&#xFF0C;&#x5DE6;&#x5BF9;&#x9F50;&#x6216;&#x5C45;&#x4E2D;&#x3002;</p>
+<table class="table">
+  <tbody><tr>
+    <th colspan="4" style="text-align:center">&#x8FD9;&#x4E2A;&#x6807;&#x9898;&#x8DE8;&#x8D8A;4&#x680F;</th>
+  </tr>
+  <tr>
+    <th rowspan="6">&#x8BE5;&#x6807;&#x9898;&#x8DE8;&#x8D8A;6&#x884C;</th>
+    <td>&#x6761;&#x76EE; A1</td>
+    <td>&#x6761;&#x76EE; A2</td>
+    <td>&#x6761;&#x76EE; A3</td>
+  </tr>
+  <tr>
+    <td>&#x6761;&#x76EE; B1</td>
+    <th colspan="2" style="text-align:center" rowspan="2">&#x5757;&#x72B6;2x2&#x6807;&#x9898;</th>
+  </tr>
+  <tr>
+    <td>&#x6761;&#x76EE; C1</td>
+  </tr>
+  <tr>
+    <td colspan="3">&#x6761;&#x76EE; D1..D3</td>
+  </tr>
+  <tr>
+    <td rowspan="2">&#x6761;&#x76EE; E1..F1</td>
+    <td colspan="2">&#x6761;&#x76EE; E2..E3</td>
+  </tr>
+  <tr>
+    <td colspan="2">&#x6761;&#x76EE; F2..F3</td>
+  </tr>
+</tbody></table>
+
+<h3 id="&#x5217;&#x8868;">&#x5217;&#x8868;</h3>
+<p>&#x8981;&#x521B;&#x5EFA;&#x6709;&#x5E8F;&#x6216;&#x65E0;&#x5E8F;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x53EA;&#x9700;&#x4F7F;&#x7528; XHTML &#x98CE;&#x683C; <code>&lt;ol&gt;</code>&#xFF0C;<code>&lt;ul&gt;</code>&#x548C;<code>&lt;li&gt;</code>&#x6807;&#x7B7E;&#x3002;&#x5217;&#x8868;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x5728;<code>&lt;body&gt;</code>&#x548C;<code>&lt;li&gt;</code>&#x6807;&#x8BB0;&#x5185;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x5217;&#x8868;&#x5185;&#x5305;&#x542B;&#x5217;&#x8868;&#x3002;&#x4E0D;&#x8981;&#x5FD8;&#x8BB0;&#x4F60;&#x6B63;&#x5728;&#x7F16;&#x5199; XML&#xFF0C;&#x5E76;&#x4E14;&#x5FC5;&#x987B;&#x95ED;&#x5408;&#x6240;&#x6709;&#x6807;&#x7B7E;&#xFF0C;&#x5305;&#x62EC;&#x5217;&#x8868;&#x9879;&#xFF0C;&#x8FD9;&#x4E0E; HTML &#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x652F;&#x6301;&#x5B9A;&#x4E49;&#x5217;&#x8868;&#xFF08;<code>&lt;dl&gt;</code>&#xFF09;&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x5B9A;&#x4E49;&#x672F;&#x8BED;&#x6807;&#x7B7E;&#xFF08;<code>&lt;dt&gt;</code>&#xFF09;&#x4E0D;&#x63A5;&#x53D7;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x5757;&#x7EA7;&#x6807;&#x7B7E;&#xFF0C;&#x4F8B;&#x5982;&#x6BB5;&#x843D;&#x6216;&#x8B66;&#x544A;&#x3002;&#x5B9A;&#x4E49;&#x5217;&#x8868;&#x5305;&#x62EC;&#xFF1A;</p>
+<p><code>&lt;dl&gt;</code></p>
+<blockquote>
+<p>&#x5B9A;&#x4E49;&#x5217;&#x8868;&#x6807;&#x7B7E;&#x5305;&#x542B;&#xFF08;<strong>D</strong>efinition <strong>L</strong>ist&#xFF09;</p>
+</blockquote>
+<p><code>&lt;dt&gt;</code></p>
+<blockquote>
+<p>&#x5B9A;&#x4E49;&#x672F;&#x8BED;&#x6807;&#x7B7E;&#xFF08;<strong>D</strong>efinition <strong>T</strong>erm&#xFF09;</p>
+</blockquote>
+<p><code>&lt;dd&gt;</code></p>
+<blockquote>
+<p>&#x548C;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x6807;&#x7B7E;&#x3002;&#xFF08;<strong>D</strong>efinition <strong>D</strong>ata&#xFF09;</p>
+</blockquote>
+<p>&#x4ECE; <a href="https://www.w3.org/TR/REC-html40/struct/lists.html" target="_blank">w3.org</a> &#x590D;&#x5236;&#x7684;&#x4EE5;&#x4E0B;&#x793A;&#x4F8B; &#x663E;&#x793A;&#x5217;&#x8868;&#x4E5F;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5217;&#x8868;&#x7C7B;&#x578B;&#xFF1A;</p>
+<p><strong>&#x8FD9;&#x4E9B;&#x6210;&#x5206;&#xFF1A;</strong></p>
+<ul>
+<li>100 &#x514B;&#x9762;&#x7C89;</li>
+<li>10 &#x514B;&#x7CD6;</li>
+<li>1 &#x676F;&#x6C34;</li>
+<li>2 &#x4E2A;&#x86CB;</li>
+<li>&#x6912;&#x76D0;</li>
+</ul>
+<p><strong>&#x6B65;&#x9AA4;&#xFF1A;</strong></p>
+<ul>
+<li>&#x5F7B;&#x5E95;&#x6DF7;&#x5408;&#x5E72;&#x6210;&#x5206;&#x3002;</li>
+<li>&#x5012;&#x5165;&#x6E7F;&#x7684;&#x6210;&#x5206;&#x3002;</li>
+<li>&#x6DF7;&#x5408; 10 &#x5206;&#x949F;&#x3002;</li>
+<li>&#x5728; 300 &#x5EA6;&#x4E0B;&#x70D8;&#x70E4;&#x4E00;&#x5C0F;&#x65F6;&#x3002;</li>
+</ul>
+<p><strong>&#x7B14;&#x8BB0;&#xFF1A;</strong></p>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6DFB;&#x52A0;&#x8461;&#x8404;&#x5E72;&#x6765;&#x6539;&#x5584;&#x914D;&#x65B9;&#x3002;</p>
+</blockquote>
+<h3 id="&#x6587;&#x6863;&#x5185;&#x53C2;&#x8003;">&#x6587;&#x6863;&#x5185;&#x53C2;&#x8003;</h3>
+<p>DevBook XML &#x4F7F;&#x4F7F;&#x7528;&#x8D85;&#x94FE;&#x63A5;&#x5F15;&#x7528;&#x6587;&#x6863;&#x7684;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x5176;&#x5B83;&#x7AE0;&#x8282;&#xFF0C;&#x4F8B;&#x5982;&#x901A;&#x8FC7;&#x952E;&#x5165;<code>&lt;uri link=&quot;::ebuild-writing/file-format/&quot;&gt;Ebuild File Format&lt;/uri&gt;</code>&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x5373;&#x4E24;&#x4E2A;&#x5192;&#x53F7;&#x540E;&#x8DDF;&#x76F8;&#x5BF9;&#x6839;&#x8282;&#x70B9;&#x7684;&#x8DEF;&#x5F84;&#x6765;&#x521B;&#x5EFA;&#x6307;&#x5411;<a href="../ebuild-writing/ebuild-file-format.html">Ebuild &#x6587;&#x4EF6;&#x683C;&#x5F0F;</a>&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x8981;&#x5F15;&#x7528;&#x53E6;&#x4E00;&#x7AE0;&#x4E2D;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x4F8B;&#x5982;<a href="../quickstart-ebuild-guide.html">First Ebuild</a>&#xFF0C;&#x952E;&#x5165;<code>&lt;uri link=&quot;::quickstart/#First Ebuild&quot;&gt;First Ebuild&lt;/uri&gt;</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x5C06;&#x94FE;&#x63A5;&#x76EE;&#x6807;&#x7684;&#x7AE0;&#x8282;&#xFF08;&#x6216;&#x8282;&#x7B49;&#xFF09;&#x6807;&#x9898;&#x7528;&#x4F5C;&#x94FE;&#x63A5;&#x6587;&#x672C;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7A7A;&#x7684;<code>&lt;uri&gt;</code>&#x5143;&#x7D20;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x6211;&#x53EF;&#x4EE5;&#x7528;&#x66F4;&#x7D27;&#x51D1;&#x7684;&#x5F62;&#x5F0F;&#x7F16;&#x5199;&#x4E0A;&#x9762;&#x7684;&#x4E24;&#x4E2A;&#x793A;&#x4F8B;&#xFF1A;<code>&lt;uri link=&quot;::ebuild-writing/file-format/&quot;/&gt;</code>&#x548C;&lt;<code>&lt;uri link=&quot;::quickstart/#First Ebuild&quot;/&gt;</code>&#x5206;&#x522B;&#x6E32;&#x67D3;&#x4E3A;<a href="../ebuild-writing/ebuild-file-format.html">Ebuild &#x6587;&#x4EF6;&#x683C;&#x5F0F;</a>&#x548C;<a href="../quickstart-ebuild-guide.html">First Ebuild</a>&#x3002;</p>
+<h2 id="&#x7F16;&#x7801;&#x98CE;&#x683C;">&#x7F16;&#x7801;&#x98CE;&#x683C;</h2>
+<p>&#x7531;&#x4E8E;&#x6240;&#x6709; Gentoo &#x6587;&#x6863;&#x90FD;&#x662F;&#x5171;&#x540C;&#x52AA;&#x529B;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x5F88;&#x591A;&#x4EBA;&#x5F88;&#x53EF;&#x80FD;&#x4F1A;&#x66F4;&#x6539;&#x73B0;&#x6709;&#x6587;&#x6863;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x4E00;&#x79CD;&#x7F16;&#x7801;&#x6837;&#x5F0F;&#x3002;&#x7F16;&#x7801;&#x6837;&#x5F0F;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x662F;&#x5173;&#x4E8E;&#x5185;&#x90E8;&#x7F16;&#x7801; &#x2014;&#x2014; XML &#x6807;&#x7B7E;&#x7684;&#x653E;&#x7F6E;&#x65B9;&#x5F0F;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x5173;&#x4E8E;&#x5185;&#x5BB9;-&#x5982;&#x4F55;&#x4E0D;&#x4F7F;&#x8BFB;&#x8005;&#x611F;&#x5230;&#x56F0;&#x60D1;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x4ECB;&#x7ECD;&#x8FD9;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#x3002;</p>
+<h3 id="&#x5185;&#x90E8;&#x7F16;&#x7801;&#x6837;&#x5F0F;">&#x5185;&#x90E8;&#x7F16;&#x7801;&#x6837;&#x5F0F;</h3>
+<p><strong>&#x65B0;&#x7684;&#x4E00;&#x884C;</strong>&#x5FC5;&#x987B;&#x653E;&#x7F6E;&#x5728;<em>&#x6BCF;&#x4E2A;</em> DevBook XML &#x6807;&#x7B7E;&#x4E4B;&#x540E;&#xFF08;&#x4E24;&#x4E2A;&#x90FD;&#x4F5C;&#x4E3A;&#x7ED3;&#x675F;&#xFF09;&#xFF0C;&#x9664;&#x4E86;&#xFF1A; <code>&lt;title&gt;</code>&#xFF0C; <code>&lt;th&gt;</code>&#xFF0C;<code>&lt;ti&gt;</code>&#xFF0C;<code>&lt;li&gt;</code>&#xFF0C; <code>&lt;dt&gt;</code>&#xFF0C;<code>&lt;dd&gt;</code>&#xFF0C; <code>&lt;b&gt;</code>&#xFF0C;<code>&lt;c&gt;</code>&#xFF0C;<code>&lt;e&gt;</code>&#xFF0C;<code>&lt;d/&gt;</code>&#xFF0C; <code>&lt;uri&gt;</code>&#x3002;</p>
+<p><strong>&#x7A7A;&#x884C;</strong>&#x5FC5;&#x987B;&#x653E;&#x7F6E;&#x5728;&#x6BCF;&#x4E2A;<code>&lt;body&gt;</code>&#xFF08;&#x4EC5;&#x5F00;&#x59CB;&#x6807;&#x7B7E;&#xFF09;&#x4E4B;&#x540E;&#x548C;&#x6BCF;&#x4E2A; <code>&lt;section&gt;</code>&#x4E4B;&#x524D;&#xFF0C;<code>&lt;p&gt;</code>&#xFF0C;<code>&lt;pre&gt;</code>&#xFF0C; <code>&lt;codesample&gt;</code>&#xFF0C;<code>&lt;figure&gt;</code>&#xFF0C;<code>&lt;table&gt;</code>&#xFF0C;<code>&lt;ul&gt;</code>&#xFF0C;<code>&lt;ol&gt;</code>&#xFF0C;<code>&lt;dl&gt;</code>&#xFF0C;<code>&lt;note&gt;</code>&#xFF0C; <code>&lt;important&gt;</code>&#x548C;<code>&lt;warning&gt;</code>&#xFF08;&#x4EC5;&#x5F00;&#x59CB;&#x6807;&#x7B7E;&#xFF09;&#x3002;</p>
+<p><strong>&#x6362;&#x884C;</strong>&#x9650;&#x5236;&#x5728; 80 &#x4E2A;&#x5B57;&#x7B26;&#xFF0C;<code>&lt;pre&gt;</code>&#x548C;<code>&lt;codesample&gt;</code>&#x9664;&#x5916;&#x3002;&#x4EC5;&#x5F53;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x9009;&#x62E9;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;URL &#x8D85;&#x8FC7;&#x6700;&#x5927;&#x5B57;&#x7B26;&#x6570;&#xFF09;&#x65F6;&#xFF0C;&#x4F60;&#x624D;&#x53EF;&#x4EE5;&#x504F;&#x79BB;&#x6B64;&#x89C4;&#x5219;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x53EA;&#x8981;&#x51FA;&#x73B0;&#x7B2C;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#xFF0C;&#x7F16;&#x8F91;&#x5668;&#x5C31;&#x5FC5;&#x987B;&#x6362;&#x884C;&#x3002;&#x4F60;&#x5E94;&#x8BE5;&#x5C1D;&#x8BD5;&#x5C06;<code>&lt;pre&gt;</code>&#x548C;<code>&lt;codesample&gt;</code>&#x5143;&#x7D20;&#x5448;&#x73B0;&#x7684;&#x5185;&#x5BB9;&#x4FDD;&#x6301;&#x5728; 80 &#x5217;&#x4E4B;&#x5185;&#xFF0C;&#x4EE5;&#x5E2E;&#x52A9;&#x63A7;&#x5236;&#x53F0;&#x7528;&#x6237;&#x3002;</p>
+<p><strong>&#x7F29;&#x8FDB;</strong>&#x4E0D;&#x5F97;&#x4F7F;&#x7528;&#xFF0C;&#x9664;&#x4E86;&#x7236; XML &#x6807;&#x8BB0;&#x4E3A;<code>&lt;tr&gt;</code>&#xFF08;&#x6765;&#x81EA;<code>&lt;table&gt;</code>&#xFF09; <code>&lt;ul&gt;</code>&#xFF0C;<code>&lt;ol&gt;</code>&#x548C;&#x7684; XML &#x7ED3;&#x6784;&#x4E4B;&#x5916;&#xFF0C;&#x3002;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7F29;&#x8FDB;&#xFF0C;&#x5219;&#x6BCF;&#x4E2A;&#x7F29;&#x8FDB;&#x5FC5;&#x987B;&#x4E3A;&#x4E24;&#x4E2A;&#x7A7A;&#x683C;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6CA1;&#x6709;&#x5236;&#x8868;&#x7B26;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x66F4;&#x591A;&#x7684;&#x7A7A;&#x683C;&#x3002;&#x6B64;&#x5916;&#xFF0C;DevBook XML &#x6587;&#x6863;&#x4E2D;&#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x5236;&#x8868;&#x7B26;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x81EA;&#x52A8;&#x6362;&#x884C;&#x53D1;&#x751F;&#x5728;<code>&lt;ti&gt;</code>&#xFF0C;<code>&lt;th&gt;</code>&#xFF0C; <code>&lt;li&gt;</code>&#x6216;<code>&lt;dd&gt;</code>&#x7ED3;&#x6784;&#xFF0C;&#x7F29;&#x8FDB;&#x5FC5;&#x987B;&#x7528;&#x4E8E;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x7F29;&#x8FDB;&#x7684;&#x793A;&#x4F8B;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Foo<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Bar<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ti</span>&gt;</span>This is an example for indentation<span class="hljs-tag">&lt;/<span class="hljs-name">ti</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ti</span>&gt;</span>
+    In case text cannot be shown within an 80-character wide line, you
+    must use indentation if the parent tag allows it
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ti</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>First option<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Second option<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<p><strong>&#x5F00;&#x59CB;&#x6807;&#x7B7E;</strong>&#x4EC5;&#x5177;&#x6709;&#x5355;&#x4E2A;&#x5C5E;&#x6027;&#x4E0D;&#x80FD;&#x5728;&#x884C;&#x4E4B;&#x95F4;&#x5206;&#x5272;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8BF7;&#x52FF;&#x5728;<code>&lt;uri</code>&#x53CA;&#x5176;<code>link</code>&#x5C5E;&#x6027;&#x4E4B;&#x95F4;&#x653E;&#x7F6E;&#x6362;&#x884C;&#x7B26;&#x3002;&#x5728;<code>&lt;uri&gt;</code>&#x6807;&#x8BB0;&#x4E4B;&#x524D;&#x6362;&#x884C;&#x3002;</p>
+<p><strong>&#x5C5E;&#x6027;</strong>&#x4E0E;&#x5C5E;&#x6027;&#xFF0C;&#x201C;=&#x201D;&#x6807;&#x8BB0;&#xFF0C;&#x5C5E;&#x6027;&#x503C;&#x4E4B;&#x95F4;&#x4E0D;&#x80FD;&#x6709;&#x7A7A;&#x683C;&#x3002;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-xml">Wrong  :     <span class="hljs-tag">&lt;<span class="hljs-name">uri</span> <span class="hljs-attr">link</span> = &quot;<span class="hljs-attr">https:</span>//<span class="hljs-attr">forums.gentoo.org</span>/&quot;&gt;</span>
+Correct:     <span class="hljs-tag">&lt;<span class="hljs-name">uri</span> <span class="hljs-attr">link</span>=<span class="hljs-string">&quot;https://forums.gentoo.org/&quot;</span>&gt;</span>
+</code></pre>
+<h2 id="&#x5916;&#x90E8;&#x7F16;&#x7801;&#x98CE;&#x683C;">&#x5916;&#x90E8;&#x7F16;&#x7801;&#x98CE;&#x683C;</h2>
+<p>&#x5728;&#x8868;&#xFF08;<code>&lt;table&gt;</code>&#xFF09;&#x548C;&#x5217;&#x8868;&#xFF08;<code>&lt;ul&gt;</code>&#xFF0C; <code>&lt;ol&gt;</code>&#x548C;<code>&lt;dl&gt;</code>&#xFF09;&#x5185;&#x90E8;&#xFF0C;&#x9664;&#x975E;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x53E5;&#x5B50;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x5E94;&#x4F7F;&#x7528;&#x53E5;&#x70B9;&#xFF08;&#x201C;.&#x201D;&#xFF09;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6BCF;&#x4E2A;&#x53E5;&#x5B50;&#x90FD;&#x5E94;&#x4EE5;&#x53E5;&#x53F7;&#xFF08;&#x6216;&#x5176;&#x4ED6;&#x9605;&#x8BFB;&#x6807;&#x8BB0;&#xFF09;&#x7ED3;&#x5C3E;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x53E5;&#x5B50;&#xFF0C;&#x5305;&#x62EC;&#x8868;&#x683C;&#x548C;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x53E5;&#x5B50;&#xFF0C;&#x90FD;&#x5E94;&#x4EE5;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x5F00;&#x5934;&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>No period<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>With period. Multiple sentences, remember?<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<p>&#x5C3D;&#x91CF;&#x4F7F;&#x7528;<code>&lt;uri&gt;</code>&#x7684; link &#x5C5E;&#x6027;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;<a href="https://forums.gentoo.org/" target="_blank">Gentoo &#x8BBA;&#x575B;</a>&#x4F18;&#x4E8E;<a href="https://forums.gentoo.org/" target="_blank">https://forums.gentoo.org/</a>&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="contributing-to-this-document.html" class="navigation navigation-prev " aria-label="Previous page: 对本文档的贡献">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="contributions.html" class="navigation navigation-next " aria-label="Next page: 贡献">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Gentoo DevBook XML 指南","level":"1.2.2.14.5","depth":4,"next":{"title":"贡献","level":"1.2.2.14.6","depth":4,"path":"index/appendices/contributions.md","ref":"index/appendices/contributions.md","articles":[]},"previous":{"title":"对本文档的贡献","level":"1.2.2.14.4","depth":4,"path":"index/appendices/contributing-to-this-document.md","ref":"index/appendices/contributing-to-this-document.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"index/appendices/gentoo-devbook-xml-guide.md","mtime":"2021-02-05T16:04:17.767Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-05T16:09:25.345Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
