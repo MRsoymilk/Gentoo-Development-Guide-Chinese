@@ -37,7 +37,7 @@ src_install() {
 
 ### 基本格式
 
-如你所见，ebuild 只是`bash`在特殊环境中执行的脚本。
+如你所见，ebuild 只是在特殊环境中执行的`bash`脚本。
 
 ebuild 的顶部是标题块。这在所有 ebuild 中都存在。
 
@@ -49,9 +49,9 @@ Ebuild 使用`Tab`缩进，每个`Tab`代表四个位置。请参阅[Ebuild 文�
 
 `EAPI`：请参阅[EAPI 用法和说明](./ebuild-writing/eapi-usage-and-description.md)。
 
-`DESCRIPTION`：软件包及其用途的简短描述。
+`DESCRIPTION`：软件包及其用途的*简短*描述。
 
-`HOMEPAGE`：软件包的主页（请记住，包括 URI 格式，例如`https://`）。
+`HOMEPAGE`：软件包的主页（记得添加 URI 格式，例如`https://`）。
 
 `SRC_URI`：告诉 Portage 下载的源码包的地址。在这里 `mirror://sourceforge/`是一个特殊的符号，表示“任何镜像”。`${P}`是 Portage 设置的只读变量，它是软件包的名称和版本——在本例中为 `ctags-5.5.4`。
 
@@ -59,21 +59,21 @@ Ebuild 使用`Tab`缩进，每个`Tab`代表四个位置。请参阅[Ebuild 文�
 
 `SLOT`：告诉 Portage 安装该软件的版本。如果你之前从未见过 slots，请使用`"0"`或者阅读 [Slotting](./general-concepts/slotting.md)。
 
-`KEYWORDS`：设置为在其上测试过此 ebuild 的架构。对于新编写的 ebuild，我们使用关键字`~`即使软件包似乎可以正常使用，它们也不会直接提交给稳定版。有关详细信息，请参见关键字和稳定化。
+`KEYWORDS`：设置为在其上测试过此 ebuild 的架构。对于新编写的 ebuild 使用关键字`~` —— 即使软件包似乎可以正常使用，它们也不会直接提交给稳定版。详细信息请参考[关键字和稳定化](./keywording-and-stabilization.md)。
 
 ### 构建函数
 
-`src_configure`函数：当要*configure*软件包时，Portage 将调用此函数。该 `econf` 函数是`./configure`调用的包装器。如果由于某种原因在`econf`中发生错误 ，Portage 将停止工作而不是尝试继续安装。
+`src_configure`函数：Portage 将调用此函数*配置*软件包。`econf` 函数是`./configure`调用的包装器。如果由于某种原因在`econf`中发生错误 ，Portage 将停止工作而不是尝试继续安装。
 
-`src_install`函数：当要安装软件包时，Portage 会调用 该函数。这里有一点微妙之处 —— 我们必须直接安装到`${D}`变量指定的特殊位置（而不是直接安装到实时文件系统中）（Portage 对此进行了设置 —— 请参阅[安装目标](./general-concepts/install-destinations.md)和[沙盒](./general-concepts/sandbox.md)）。
+`src_install`函数：Portage 将调用此函数*安装*软件包。这里有一点微妙之处 —— 我们必须直接安装到`${D}`变量指定的特殊位置（而不是直接安装到实时文件系统中）（Portage 对此进行了设置 —— 请参阅[安装目标](./general-concepts/install-destinations.md)和[沙盒](./general-concepts/sandbox.md)）。
 
 <div class="alert alert-note">
-<b>注意</b>： 规范的安装方法是<code><pre>emake DESTDIR="${D}" install</pre></code> 。这种方法支持任何正确编写的标准 <code><pre>Makefile</pre></code>文件。如果这会导致沙盒错误，请参阅 <a href="./ebuild-writing/ebuild-functions/src_install/README.md">src_install</a> 以了解如何进行手动安装。
+<b>注意</b>： 规范的安装方法是<code><pre>emake DESTDIR="${D}" install</pre></code> 。这种方法支持任何正确编写的标准 <code><pre>Makefile</pre></code>文件。如果提示沙盒错误，请参阅 <a href="./ebuild-writing/ebuild-functions/src_install/README.md">src_install</a> 以了解如何进行手动安装。
 </div>
 
 `dodoc`: 将文件安装到`/usr/share/doc`相关部分的辅助函数。
 
-Ebuild 可以定义其他函数（请参阅 `Ebuild 函数`）。在所有情况下，Portage 提供了一个合理的默认实现，该实现通常会做“正确的事情”。不需要定义 `src_unpack` 和 `src_compile` 函数，例如 —— `src_unpack` 函数用于解压缩压缩文件或为源文件打补丁，但这种情况下默认实现做了我们需要的一切。同样，默认 `src_compile` 函数将调用`make`的包装：`emake`。
+Ebuild 可以定义其他函数（请参阅 `Ebuild 函数`）。在所有情况下，Portage 提供了一个合理的默认实现，该实现通常会做“正确的事情”。此处不需要定义 `src_unpack` 和 `src_compile` 函数，例如 —— `src_unpack` 函数用于解压缩压缩文件或为源文件打补丁，但这种情况下默认实现做了我们需要的一切。同样，默认的 `src_compile` 函数将调用`make`的包装：`emake`。
 
 <div class="alert alert-note">
 <b>注意</b>： 以前，必须在每个命令之后使用<code><pre>|| die</pre></code>构造以检查错误。在 EAPI 4 后，这不再是必需的 —— 如果发生故障，Portage 提供的函数将默认处理。
@@ -109,15 +109,15 @@ src_configure() {
 }
 ```
 
-同样，你可以看到 ebuild 标题块和各种参考变量。在 `SRC_URI`中，`${PN}`用于获取不带版本后缀的软件包名称（更多变量 —— 请参见[预定义的只读变量](./ebuild-writing/variables.md)）。
+同样，你可以看到 ebuild 标题块和各种参考变量。在 `SRC_URI`中，`${PN}`用于获取*不带*版本后缀的软件包名称（更多变量 —— 请参见[预定义的只读变量](./ebuild-writing/variables.md)）。
 
-我们仅定义 `src_configure` 。 `src_install` 不需要定义，因为调用 `emake install`和安装通用文档文件的默认实现对于该软件包是正确的。
+我们仅定义 `src_configure` 。 `src_install` 不需要定义，因为调用 `emake install`和安装通用文档文件的默认实现对于该软件包是可行的。
 
 `DEPEND` 和 `RDEPEND` 变量决定了 Portage 构建和运行需要的软件包。`DEPEND` 变量列出了编译时依赖，`RDEPEND` 变量列出了运行时依赖。有关更多复杂的示例，请参见 [依赖关系](./general-concepts/dependencies.md)。
 
 ## 具有补丁的 Ebuild
 
-通常，我们会使用补丁。这可以通过在 `src_prepare`函数中 使用 eapply 助手函数完成。要使用 eapply 一个必要条件是使用 EAPI7。这是 `app-misc/detox/detox-1.1.0.ebuild`：
+通常，我们会使用补丁。这可以通过在 `src_prepare` 函数中 使用 `eapply` 助手函数完成。使用 `eapply` 的一个必要条件是使用 EAPI 7。这是 `app-misc/detox/detox-1.1.0.ebuild`：
 
 ```bash
 # Copyright 1999-2020 Gentoo Authors
@@ -149,13 +149,13 @@ src_configure() {
 }
 ```
 
-请注意`${FILESDIR}/${P}-destdir.patch`——指的是 `detox-1.1.0-destdir.patch`，它 位于 Gentoo 存储库`files/` 的子目录中。较大的修补程序文件必须位于开发人员的空间：`dev.gentoo.org` 而不是位于 `files/`或镜像中—请参阅[Gentoo 镜像](./general-concepts/mirrors.md)和 [使用 epatch 和 eapply 打补丁](./ebuild-writing/ebuild-functions/src_prepare/patching-with-epatch-and-eapply.md)。
+请注意`${FILESDIR}/${P}-destdir.patch` —— 指的是 `detox-1.1.0-destdir.patch`，它位于 Gentoo 存储库 `files/` 的子目录中。较大的补丁程序文件必须位于开发人员空间：位于 `dev.gentoo.org` 而不是位于 `files/`或镜像中 —— 请参阅[Gentoo 镜像](./general-concepts/mirrors.md)和 [使用 epatch 和 eapply 打补丁](./ebuild-writing/ebuild-functions/src_prepare/patching-with-epatch-and-eapply.md)。
 
 当 `src_prepare` 段落被覆盖时，必须确保 `eapply_user` 被调用。
 
 ## 具有 USE 标志的 Ebuild
 
-现在来一下 `USE` 标志。这是`dev-libs/libiconv/libiconv-1.9.2.ebuild `，`libc`没有实现的字符转换库。
+现在来看一下 `USE` 标志。这是`dev-libs/libiconv/libiconv-1.9.2.ebuild `，`libc`没有实现的字符转换库。
 
 ```bash
 # Copyright 1999-2020 Gentoo Authors
@@ -181,7 +181,7 @@ src_configure() {
 
 注意 `IUSE`变量。它列出了 ebuild 使用的所有（非特殊）使用标志。除其他外，它用于`emerge -pv`输出。
 
-软件包的`./configure` 脚本通常采用 `--enable-nls` 或 `--disable-nls` 参数。我们使用`use_enable`实用函数来自动生成此函数（参阅[查询函数参考](./ebuild-writing/variables.md)）。
+软件包的`./configure` 脚本通常采用 `--enable-nls` 或 `--disable-nls` 参数。我们使用`use_enable`实用函数来自动生成此函数，具体取决于用户`USE`标志（参阅[查询函数参考](./ebuild-writing/variables.md)）。
 
 另一个更复杂的示例，这次基于 `mail-client/sylpheed/sylpheed-1.0.4.ebuild`：
 
