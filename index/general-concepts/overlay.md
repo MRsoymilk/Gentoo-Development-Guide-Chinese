@@ -7,11 +7,11 @@ overlay 应包含与 `PORTDIR`相同的目录结构（尽管仅需要包含必�
 ```bash
 overlay
 |-- dev-util
-    \`-- gengetopt
+    `-- gengetopt
         |-- Manifest
         |-- files
-        |   \`-- gengetopt-2.13-foobar.patch
-        \`-- gengetopt-2.13.ebuild
+        |   `-- gengetopt-2.13-foobar.patch
+        `-- gengetopt-2.13.ebuild
 ```
 
 overlay 可用于将项目“添加”到 tree 中（尽管你必须确保在添加任何新类别的情况下使用`/etc/portage/categories` ）或覆盖现有条目。
