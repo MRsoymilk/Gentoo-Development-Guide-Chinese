@@ -143,5 +143,5 @@ src_compile() {
 当前体系结构（例如`x86`，`sparc`，`ppc-macos`）也将自动设置为 USE 标志。有关有效架构关键字的完整列表，请参见`profiles/arch.list`；有关 ​​ 格式的说明，请参见[GLEP 22](https://www.gentoo.org/glep/glep-0022.html)。
 
 <div class="alert alert-warning">
-<b>警告</b>：常见的误解是架构变量某种程度上与<code><pre>ACCEPT_KEYWORDS</pre></code>相关。但并不是。例如，在<code><pre>sparc</pre></pre>上设置<code><pre>x86</pre></pre>关键字将不会设置<code><pre>USE=x86</pre></pre>。同样，也没有<code><pre>~arch</pre></pre>USE标志，所以不要尝试<code><pre>if use ~x86</pre></pre>。
+<b>警告</b>：常见的误解是架构变量某种程度上与<code><pre>ACCEPT_KEYWORDS</pre></code>相关。但并不是。例如，在<code><pre>sparc</pre></code>上设置<code><pre>x86</pre></code>关键字将不会设置<code><pre>USE=x86</pre></code>。同样，也没有<code><pre>~arch</pre></code>USE标志，所以不要尝试<code><pre>if use ~x86</pre></code>。
 </div>
