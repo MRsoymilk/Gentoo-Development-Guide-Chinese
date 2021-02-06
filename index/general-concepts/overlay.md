@@ -16,6 +16,6 @@ overlay
 
 overlay 可用于将项目“添加”到 tree 中（尽管你必须确保在添加任何新类别的情况下使用`/etc/portage/categories` ）或覆盖现有条目。
 
-## Overlay 和 Eclass
+## Overlay 和 Eclasses
 
 在 overlay 中使用 eclass 时要非常小心。当更改一个 overlay eclass 时，Portage 不会更新缓存，也不会在 overlay ebuild 使用的主要 Gentoo 存储库 eclass 更改时更新缓存。在 overlay 中使用 eclass 时，你还可能还会遇到假的“非法继承”通知（参阅 [质量检查通知：ECLASS foo 被非法继承](./../appendices/common-problems.md)）。为了安全起见，在更新 overlay eclass 之后，手动`touch` 所有相关 overlay 文件。
