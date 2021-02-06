@@ -3,23 +3,23 @@
 Gentoo 存储库的基本布局如下：
 
 - 类别，例如`app-editors`，`sys-apps`
-  - 类别元数据，例如`app-admin/metadata.xml` —— 软件包目录，例如`app-editors/vim` —— 软件包元数据，例如`app-editors/vim/metadata.xml` —— 软件包 Manifest，例如`app-editors/vim/Manifest`
-  - ebuild，例如 `app-editors/vim/vim-6.3.068.ebuild`，`app-editors/vim/vim-7.0_alpha20050326.ebuild` —— 软件包文件目录，例如 `app-editors/vim/files`
-    - 小补丁和其他杂项文件，例如 `app-editors/vim/files/vim-completion`
+- 类别元数据，例如`app-admin/metadata.xml` —— 软件包目录，例如`app-editors/vim` —— 软件包元数据，例如`app-editors/vim/metadata.xml` —— 软件包 Manifest，例如`app-editors/vim/Manifest`
+- ebuild，例如 `app-editors/vim/vim-6.3.068.ebuild`，`app-editors/vim/vim-7.0_alpha20050326.ebuild` —— 软件包文件目录，例如 `app-editors/vim/files`
+- 小补丁和其他杂项文件，例如 `app-editors/vim/files/vim-completion`
 - eclass 目录，`eclass/`
 - 许可证目录，`licenses/`
 - 元数据目录，`metadata/`。列出的大多数内容都没有直接保存在主 git tree 中，而是作为[从 Git 到 RSYNC](./git-to-rsync.md) 流程的一部分自动生成或包含在其他存储库中。
-  - 各种控制文件，例如 `layout.conf`，`timestamp` 和 `projects.xml`。主 git tree 中仅存在 `layout.conf`。
-  - `metadata/dtd/`和`metadata/xml-schema/`中的 XML 验证文件。
-  - `metadata/glsa/`中的安全公告以及`metadata/news/`中的新闻项
-- 个人文件 目录，`profiles/`
-  - 各种控制和文档文件，例如`categories`，`info_pkgs`，`info_vars`，`package.mask`，`use.desc`
-  - 更新目录，`profiles/updates/`
-    - 更新文件，例如 `profile/updates/1Q-2005`
-  - 主要的 profile 子目录
-- 脚本目录，scripts/
+- 各种控制文件，例如 `layout.conf`，`timestamp` 和 `projects.xml`。主 git tree 中仅存在 `layout.conf`。
+- `metadata/dtd/`和`metadata/xml-schema/`中的 XML 验证文件。
+- `metadata/glsa/`中的安全公告以及`metadata/news/`中的新闻项
+- 个人文件目录，`profiles/`
+- 各种控制和文档文件，例如`categories`，`info_pkgs`，`info_vars`，`package.mask`，`use.desc`
+- 更新目录，`profiles/updates/`
+- 更新文件，例如 `profile/updates/1Q-2005`
+- 主要的 profile 子目录
+- 脚本目录，`scripts/`
 
-## tree 中属于什么？
+## 什么属于 tree？
 
 **不属于**tree 的事物：
 
