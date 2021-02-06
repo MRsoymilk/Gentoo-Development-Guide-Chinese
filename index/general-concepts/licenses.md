@@ -20,11 +20,11 @@ LICENSE="|| ( foo bar )"
 
 非免费许可证可能会施加其他限制，这些限制需要在 ebuild 中声明。为了正确识别此类限制，有必要分析相关许可证并根据上游软件包中包含的文件确定适用的条款。请注意，上游可能对多个产品使用相同的许可证，但某些限制不适用于所讨论的 ebuild。
 
-如果软件包的许可证未明确允许重新分发在中找到的 distfile `SRC_URI`，则相应的 ebuild 必须必须 `RESTRICT=mirror` 防止将受影响的文件复制到 Gentoo 镜像中。在某些情况下，许可证仅允许重新分发未修改的原始存档-在这种情况下，`SRC_URI` 不得包含已修改或重新打包的上游存档，并且所有更改都必须通过在适当的 ebuild 阶段进行修补来应用。
+如果软件包的许可证未明确允许重新分发在 `SRC_URI` 中找到的 distfile ，则相应的 ebuild 必须使用 `RESTRICT=mirror` 以防止将受影响的文件复制到 Gentoo 镜像中。在某些情况下，许可证仅允许重新分发未修改的原始存档 —— 在这种情况下，`SRC_URI` 不得包含已修改或重新打包的上游存档，并且所有更改都必须通过在适当的 ebuild 阶段进行修补来应用。
 
 如果许可证不允许分发使用 ebuild 构建的 Gentoo 二进制软件包，无论是否进行了源代码修改，它都必须具有 `RESTRICT=bindist`。如果根据重新分配的成本设置了限制（例如，许可证禁止出售产品），情况也是如此。
 
-某些 EULA 可能还要求用户手动获取 distfile，在这种情况下 `RESTRICT=fetch` 是必需的。请注意，这 `RESTRICT=fetch` 意味着 `RESTRICT=mirror`。
+某些 EULA 可能还要求用户手动获取 distfile，在这种情况下 `RESTRICT=fetch` 是必需的。请注意，`RESTRICT=fetch` 意味着 `RESTRICT=mirror`。
 
 ## 确定正确的许可证
 
