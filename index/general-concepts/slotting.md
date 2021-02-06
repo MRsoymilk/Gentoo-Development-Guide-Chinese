@@ -25,10 +25,10 @@
 
 例如，假设软件包`foo` 安装了一个库，其 soname 对于不同的版本是不同的。将 soname 版本用作子 slot 名称是合理的：
 
-- `foo-1.1`安装`libfoo.so.5`——`SLOT="1/5"`
-- `foo-1.2`安装`libfoo.so.6`——`SLOT="1/6"`
-- `foo-2.0`安装`libfoo-2.so.0`——`SLOT="2/0"`
-- `foo-2.1`安装`libfoo-2.so.1`——`SLOT="2/1"`
+- `foo-1.1`安装`libfoo.so.5` —— `SLOT="1/5"`
+- `foo-1.2`安装`libfoo.so.6` —— `SLOT="1/6"`
+- `foo-2.0`安装`libfoo-2.so.0` —— `SLOT="2/0"`
+- `foo-2.1`安装`libfoo-2.so.1` —— `SLOT="2/1"`
 
 然后，安装了链接到`libfoo-2`（或`libfoo`）的二进制文件的其他 ebuild 可以在安装的`foo:2`或`foo:1`更改子 slot 时（例如，当用户从`foo-2.0`升级时）请求自动重建到`foo-2.1。`
 
@@ -40,4 +40,4 @@
 
 ## Slot 名称
 
-当前版本的 portage 接受以字母数字字符或*开头的 slot 和子 slot 名称，可包含字母数字和`*`，`-`、`.`和`+`字符。
+当前版本的 portage 接受以字母数字字符或`_`开头的 slot 和子 slot 名称，可包含字母数字和`_`,`-`,`.`和`+`字符。
