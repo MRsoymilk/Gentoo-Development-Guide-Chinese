@@ -8,6 +8,6 @@
 
 ## 薄和厚的 Manifest
 
-Gentoo 中有两种 Manifest 文件：用于开发存储库的瘦 Manifest，以及通过 同步分发给最终用户的瘦 Manifest。上面介绍了薄清单。
+Gentoo 中有两种 Manifest 文件：用于开发存储库的薄 Manifest，以及通过 同步分发给最终用户的薄 Manifest。上面介绍了薄清单。
 
 厚 Manifest 将为存储库中的所有文件添加校验和，并添加一个 OpenPGP 签名。当通过不安全的通道传输存储库时，这将提供完整性和真实性检查。厚 Manifest 是在 Gentoo 基础架构上自动生成的，不需要开发人员采取任何具体措施。
