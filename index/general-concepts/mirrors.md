@@ -12,9 +12,9 @@
 
 如果我们无法合法地镜像某些文件，则应使用`RESTRICT="mirror"`设置；文件仍然会从原始位置下载。
 
-`RESTRICT="primaryuri"`设置使 Portage 首先尝试原始位置，然后在必要时退回镜像。这不应在新的 ebuild 中使用。
+`RESTRICT="primaryuri"`设置使 Portage *首先*尝试原始位置，然后在必要时退回镜像。这不应在新的 ebuild 中使用。
 
-还有`RESTRICT="etch"`，它可以阻止 Portage 手动获取任何内容。如果找不到任何 `SRC_URI` 组件，则将调用[pkg_nofetch](./../ebuild-writing/ebuild-functions/pkg_nofetch.md)函数。仅在许可证要求时才应使用此选项。
+还有`RESTRICT="fetch"`，它可以阻止 Portage 手动获取任何内容。如果找不到任何 `SRC_URI` 组件，则将调用[pkg_nofetch](./../ebuild-writing/ebuild-functions/pkg_nofetch.md)函数。仅在许可证要求时才应使用此选项。
 
 ## 替换自动镜像的文件
 
@@ -27,7 +27,7 @@ SRC_URI="https://example.com/badupstream/${P}.tar.gz -> ${P}_20191016.tar.gz"
 
 由于 Gentoo 镜像使用本地 distfile 名称进行操作，因此它们将自动获取并开始分发新版本。
 
-请注意，如果上游进行了任何影响构建软件包的更改，则还需要修改 ebuild 的修订版。最后，请记住删除与旧 distfile 关联的 ebuild，或在中重新生成它们在`Manifest`（如果有）的校验和 。这是必需的，因为这将导致校验和不匹配错误，因为 Manifest 文件中记录的校验和不再与提取的 distfile 的计算校验和匹配。
+请注意，如果上游进行了任何影响构建软件包的更改，则还需要修改 ebuild 的修订版。最后，请记住删除与旧 distfile 关联的 ebuild，或在 `Manifest` 中重新生成它们（如果有）的校验和 。这是必需的，因为这将导致校验和不匹配错误，因为 Manifest 文件中记录的校验和不再与提取的 distfile 的计算校验和匹配。
 
 有关镜像内部的更多常规信息，可以在 [Infrastructure project's Distfile Mirroring System page](https://wiki.gentoo.org/wiki/Project:Infrastructure/Mirrors/Distfile_Mirroring_System)上找到。
 
