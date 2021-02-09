@@ -1,6 +1,6 @@
 # Overlay
 
-通过使用 Overlay，Portage 可以在多个位置查找软件包，overlay 的位置由 `location` 一个或多个 repos.conf 文件中的变量控制。
+通过使用 Overlay，Portage 可以在多个位置查找软件包，overlay 的位置由 repos.conf 文件中一个或多个 `location` 变量控制。
 
 overlay 应包含与 `PORTDIR`相同的目录结构（尽管仅需要包含必要的目录）。例如，一个简单的 overlay 可能具有如下目录结构：
 
