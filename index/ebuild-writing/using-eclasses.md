@@ -52,4 +52,4 @@ src_install() {
 
 请注意 `inherit` 紧跟标题之后。
 
-要获取`eautoreconf`函数，需要使用`autotools` eclass（请参见[autotools.eclass](./../eclass-reference/autotools.eclass.md)）。替换标志需要`flag-o-matic` eclass（请参阅[flag-o-matic.eclass](./../eclass-reference/flag-o-matic.eclass.md)），`bash-completion-r1` eclass（[bash-completion-r1.eclass](./../eclass-reference/bash-completion-r1.eclass.md)）用于通过`dobashcomp`处理 bash 完成文件。
+要获取 `eautoreconf` 函数，需要使用 `autotools` eclass（请参见[autotools.eclass](./../eclass-reference/autotools.eclass.md)）。替换标志需要`flag-o-matic` eclass（请参阅[flag-o-matic.eclass](./../eclass-reference/flag-o-matic.eclass.md)），`bash-completion-r1` eclass（[bash-completion-r1.eclass](./../eclass-reference/bash-completion-r1.eclass.md)）用于通过 `dobashcomp` 处理 bash 补全文件。
