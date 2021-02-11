@@ -16,11 +16,11 @@
 | `PF`                  | 完整的软件包名称，`${PN}-${PVR}`例如 `vim-6.3-r1`。                                                                                                                                                         |
 | `A`                   | 软件包的所有源文件（不包括由于 `USE` 标志而无法使用的文件）。                                                                                                                                               |
 | `CATEGORY`            | 包的类别，例如 `app-editors`。                                                                                                                                                                              |
-| `FILESDIR`            | ebuild `files/`目录的路径，通常用于小补丁和文件。例如： `"${PORTDIR}/${CATEGORY}/\${PN}/files"`。                                                                                                           |
-| `WORKDIR`             | ebuild 的根生成目录的路径。例如： `"\${PORTAGE_BUILDDIR}/work"`。                                                                                                                                           |
-| `T`                   | ebuild 可以使用的临时目录的路径。例如：`"\${PORTAGE_BUILDDIR}/temp"`。                                                                                                                                      |
-| `D`                   | 临时安装目录的路径。例如： `"\${PORTAGE_BUILDDIR}/image"`。                                                                                                                                                 |
-| `HOME`                | 临时目录的路径，供 ebuild 调用的可能读取或修改主目录的任何程序使用。例如： `"\${PORTAGE_BUILDDIR}/homedir"`。                                                                                               |
+| `FILESDIR`            | ebuild `files/`目录的路径，通常用于小补丁和文件。例如： `"${PORTDIR}/${CATEGORY}/${PN}/files"`。                                                                                                           |
+| `WORKDIR`             | ebuild 的根生成目录的路径。例如： `"${PORTAGE_BUILDDIR}/work"`。                                                                                                                                           |
+| `T`                   | ebuild 可以使用的临时目录的路径。例如：`"${PORTAGE_BUILDDIR}/temp"`。                                                                                                                                      |
+| `D`                   | 临时安装目录的路径。例如： `"${PORTAGE_BUILDDIR}/image"`。                                                                                                                                                 |
+| `HOME`                | 临时目录的路径，供 ebuild 调用的可能读取或修改主目录的任何程序使用。例如： `"${PORTAGE_BUILDDIR}/homedir"`。                                                                                               |
 | `ROOT`                | 软件包将合并到的根目录的绝对路径。仅在 `pkg_*`阶段中允许。见 [ROOT](./variables.md)。                                                                                                                                     |
 | `DISTDIR`             | 包含目录的路径，该目录存储了为该软件包获取的所有文件。                                                                                                                                                      |
 | `EPREFIX`             | 偏移安装的标准化偏移前缀路径。更多信息请参见 [Gentoo 前缀技术文档](https://wiki.gentoo.org/wiki/Project:Prefix/Technical_Documentation)。                                                                                                                                      |
@@ -133,7 +133,7 @@ SRC_URI="mirror://example/${PN}/${P}.tar.gz"
 
 ## ROOT
 
-`ROOT`背后的思想是，可以用`ROOT=/somewhere`构建一个系统，然后将其 chroot 或在其某处 tar 压缩为系统映像。它的设计不允许用户运行`/somewhere/usr/bin/foo`。
+`ROOT`背后的思想是，可以用`ROOT=/somewhere`构建一个系统，然后将其 chroot 或 tar 压缩 `/somewhere` 为系统映像。它的设计不允许用户运行`/somewhere/usr/bin/foo`。
 
 Ebuild 只能在`pkg_*`阶段引用`ROOT`。由于合并二进制包时`ROOT`可能不同，因此无法在`src_*`阶段正确使用它。例如，可以使用`ROOT=/`构建二进制包，然后使用`ROOT=/somewhere`将其安装到系统上。
 
@@ -176,7 +176,7 @@ ver\_ 函数用于从版本字符串中提取特定组件。有关更多文档�
 
 | 函数                     | 目的                                         |
 | :----------------------- | :------------------------------------------- |
-| `ver\*rs [range] ' '`    | 获取重要的版本组件，但不包括'.'，'-'和'\_'。 |
+| `ver*rs [range] ' '`    | 获取重要的版本组件，但不包括'.'，'-'和'\_'。 |
 | `ver_cut 1 `             | 获取主要版本。                               |
 | `ver_cut [range] `       | 从版本字符串中提取一系列子部分。             |
 | `ver_cut 2- `            | 在主要版本之后获取所有内容。                 |
