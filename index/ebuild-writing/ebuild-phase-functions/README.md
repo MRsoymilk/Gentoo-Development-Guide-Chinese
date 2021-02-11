@@ -1,4 +1,4 @@
-# Ebuild 函数
+# Ebuild 阶段函数
 
 从源安装软件包时，函数调用顺序为 `pkg_pretend`，`pkg_setup`，`src_unpack`，`src_prepare`，`src_configure`，`src_compile`，`src_test`（可选，`FEATURES ="test"`），`src_install`，`pkg_preinst`，`pkg_postinst`。从二进制文件安装软件包时，函数调用顺序为 `pkg_pretend`，`pkg_setup`，`pkg_preinst`，`pkg_postinst`。由于尚未从一开始就引入某些阶段，因此您可以查看[EAPI 使用和描述](./../eapi-usage-and-description.md)以获取概述，其中介绍了在哪个 EAPI 中引入了哪些内容。
 
