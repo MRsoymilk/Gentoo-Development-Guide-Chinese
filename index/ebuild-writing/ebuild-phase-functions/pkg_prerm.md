@@ -11,7 +11,7 @@
 ## 默认 `pkg_prerm`
 
 ```bash
-pkg_prerm())
+pkg_prerm()
 {
 	return
 }
