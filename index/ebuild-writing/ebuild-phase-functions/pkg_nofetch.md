@@ -3,15 +3,15 @@
 |          |                                  |
 | :------- | :------------------------------- |
 | **函数** | `pkg_nofetch`                    |
-| **目的** | 告诉用户如何处理获取限制的软件包 |
+| **目的** | 告诉用户如何处理获取受限的软件包 |
 | **沙盒** | 已启用                           |
 | **权限** | root                             |
 | **要求** | ebuild                           |
 
 ## 默认 `pkg_nofetch`
 
-```bashpkg_nofetch()
-{
+```bash
+pkg_nofetch() {
 	[ -z "${SRC_URI}" ] && return
 
 	echo "!!! The following are listed in SRC_URI for ${PN}:"
