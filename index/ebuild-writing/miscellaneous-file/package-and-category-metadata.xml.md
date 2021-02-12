@@ -145,7 +145,7 @@
 
 #### 划分维护关系
 
-本示例使用属性`restrict`根据软件包版本划分维护者。根据`sys-boot/grub`的`metadata.xml`描述，版本 2 及更高版本的 ebuild 由floppym@gentoo.org维护，而早期版本则由 Gentoo 基本系统项目维护。注意在`restrict`中使用“&gt;” 而非“>” 。
+本示例使用属性`restrict`根据软件包版本划分维护者。根据`sys-boot/grub`的`metadata.xml`描述，版本 2 及更高版本的 ebuild 由floppym@gentoo.org维护，而早期版本则由 Gentoo 基本系统项目维护。注意在`restrict`中使用“`&gt;`” 而非“>” 。
 
 该示例还在 USE 标志说明中使用了`<pkg>`标签。`<pkg>`中不允许使用 slot 依赖性说明符，因此，采用`<pkg>sys-boot/grub</pkg>:2`而非`<pkg>sys-boot/grub :2</pkg>`表示。
 
