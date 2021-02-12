@@ -7,7 +7,7 @@
 较大的补丁应进行[镜像](./../../general-concepts/mirrors.md)，最好在 Gentoo 基础结构上进行镜像。 在镜像补丁时，选择不会引起冲突的名称很重要——此处强烈建议使用`${P}`前缀。 镜像补丁通常使用`xz`或`bzip2`压缩。 请记住在`SRC_URI`中列出这些补丁。
 
 <div class="alert alert-note">
-<b>注意</b>：<code><pre>${FILESDIR}</pre></code>中包含的补丁切勿压缩其。
+<b>注意</b>：在<code><pre>${FILESDIR}</pre></code>中包含的补丁切勿压缩。
 </div>
 <div class="alert alert-warning">
 <b>警告</b>：从EAPI=6开始，剥离补丁程序级别仅限于<code><pre>-p1</pre></code>。尽管可以使用<code><pre>eapply -p&lt;strip_level&gt;</pre></code> 命令覆盖它，但还是建议使用补丁本身以使其与<code><pre>-p1</pre></code>默认值兼容。
