@@ -11,7 +11,8 @@
 ## 默认 `pkg_postrm`
 
 ```bash
-pkg_postrm(){
+pkg_postrm()
+{
 	return
 }
 ```
