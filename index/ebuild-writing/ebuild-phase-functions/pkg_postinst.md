@@ -6,7 +6,7 @@
 | **目的** | image 安装到 `${ROOT}`后调用 |
 | **沙盒** | 不具备                       |
 | **权限** | root                         |
-| **要求** | ebuild，binary               |
+| **调用** | ebuild，binary               |
 
 ## 默认 `pkg_postinst`
 

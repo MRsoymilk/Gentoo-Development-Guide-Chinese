@@ -6,7 +6,7 @@
 | **目的** | 取消合并软件包后调用 |
 | **沙盒** | 不具备               |
 | **权限** | root                 |
-| **要求** | ebuild，binary       |
+| **调用** | ebuild，binary       |
 
 ## 默认 `pkg_postrm`
 

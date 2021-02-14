@@ -6,7 +6,7 @@
 | **目的** | 在依赖性计算期间对软件包进行完整性检查 |
 | **沙盒** | ?                                      |
 | **权限** | root                                   |
-| **要求** | ebuild, binary                         |
+| **调用** | ebuild, binary                         |
 | **EAPI** | 4                                      |
 
 ## 默认 `pkg_pretend`

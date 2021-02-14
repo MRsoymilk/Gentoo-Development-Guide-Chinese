@@ -2,7 +2,7 @@
 
 从源安装软件包时，函数调用顺序为 `pkg_pretend`，`pkg_setup`，`src_unpack`，`src_prepare`，`src_configure`，`src_compile`，`src_test`（可选，`FEATURES ="test"`），`src_install`，`pkg_preinst`，`pkg_postinst`。从二进制文件安装软件包时，函数调用顺序为 `pkg_pretend`，`pkg_setup`，`pkg_preinst`，`pkg_postinst`。由于尚未从一开始就引入某些阶段，因此您可以查看[EAPI 使用和描述](./../eapi-usage-and-description.md)以获取概述，其中介绍了在哪个 EAPI 中引入了哪些内容。
 
-![ebuild 阶段函数的处理流程](../../../resource/ebuild-phase-functions.png)
+![ebuild 阶段函数的处理流程](../../../resource/Ebuild-Phase-Functions.png)
 
 `pkg_pretend` 函数将用于执行各种早期的完整性检查，例如确保启用了某些内核选项。重要的是要记住，`pkg_pretend` 与其余阶段功能序列分开运行。因此，没有节省环境或传播到下一阶段。此外，在此阶段不能保证满足 ebuild 依赖关系。
 

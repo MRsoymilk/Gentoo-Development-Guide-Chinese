@@ -6,7 +6,7 @@
 | **目的** | 预构建环境配置和检查 |
 | **沙盒** | 未启用               |
 | **权限** | root                 |
-| **要求** | ebuild, binary       |
+| **调用** | ebuild, binary       |
 
 ## 默认 pkg_setup
 
