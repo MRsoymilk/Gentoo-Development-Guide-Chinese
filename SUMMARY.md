@@ -112,7 +112,6 @@
       - [消息函数参考](index/function-reference/message-functions-reference.md)
       - [查询函数参考](index/function-reference/query-functions-reference.md)
       - [沙盒函数参考](index/function-reference/sandbox-functions-reference.md)
-      - [沙盒函数参考](index/function-reference/sandbox-functions-reference.md)
     - [Eclass 参考](index/eclass-reference/README.md)
     - [工具参考](index/tools-reference/README.md)
       - [bash](index/tools-reference/bash-standard-shell.md)
