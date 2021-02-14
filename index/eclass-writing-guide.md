@@ -135,7 +135,7 @@ domacosapp() {
 
 ## 导出函数
 
-eclass 可以为任何标准 ebuild 函数（`src_unpack`，`pkg_postinst`等）提供默认实现。可以作为简单的函数定义（不兼容多个 eclass）或使用`EXPORT_FUNCTIONS`来完成。赋予`EXPORT_FUNCTIONS`的函数正常实现，但其名称带有`${ECLASS}_`前缀。
+eclass 可以为任何标准 ebuild 阶段函数（`src_unpack`，`pkg_postinst`等）提供默认实现。可以作为简单的函数定义（不兼容多个 eclass）或使用`EXPORT_FUNCTIONS`来完成。赋予`EXPORT_FUNCTIONS`的函数正常实现，但其名称带有`${ECLASS}_`前缀。
 
 <div class="alert alert-note">
 <b>重要提示</b>：中 仅应指定“标准”函数 <code><pre>EXPORT_FUNCTIONS</pre></code>。

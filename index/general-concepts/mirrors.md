@@ -14,7 +14,7 @@
 
 `RESTRICT="primaryuri"`设置使 Portage *首先*尝试原始位置，然后在必要时退回镜像。这不应在新的 ebuild 中使用。
 
-还有`RESTRICT="fetch"`，它可以阻止 Portage 手动获取任何内容。如果找不到任何 `SRC_URI` 组件，则将调用[pkg_nofetch](./../ebuild-writing/ebuild-functions/pkg_nofetch.md)函数。仅在许可证要求时才应使用此选项。
+还有`RESTRICT="fetch"`，它可以阻止 Portage 手动获取任何内容。如果找不到任何 `SRC_URI` 组件，则将调用[pkg_nofetch](./../ebuild-writing/ebuild-phase-functions/pkg_nofetch.md)函数。仅在许可证要求时才应使用此选项。
 
 ## 替换自动镜像的文件
 

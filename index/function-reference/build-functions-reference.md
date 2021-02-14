@@ -5,5 +5,5 @@
 | **函数**          | **细节**                                                                                                   |
 | :---------------- | :--------------------------------------------------------------------------------------------------------- |
 | `unpack archives` | 解压缩指定压缩文件。                                                                                       |
-| `econf args`      | `./configure`包装器。传递所有 `args`。 `configure` 失败将中止（通过 `die`）。详细信息参见 [econf 选项](./src_config/../../ebuild-writing/ebuild-functions/src_configure/configuring-a-package.md)。 |
+| `econf args`      | `./configure`包装器。传递所有 `args`。 `configure` 失败将中止（通过 `die`）。详细信息参见 [econf 选项](./src_config/../../ebuild-writing/ebuild-phase-functions/src_configure/configuring-a-package.md)。 |
 | `emake args`      | `make`包装器。传递所有 `args`。                                                                            |

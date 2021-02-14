@@ -44,7 +44,7 @@ KEYWORDS="-* ppc x86"
 **不要**在 ebuild 中使用`*`或`~*`特殊关键字。
 
 <div class="alert alert-note">
-<b>注意</b>： 通常，“live” ebuild（请参阅<a href="./ebuild-writing/ebuild-functions/src_unpack/version-control-system-sources.md">版本控制系统（VCS）源</a>）不会指定 <code><pre>KEYWORDS</pre></code> 变量，也不会为其分配空字符串。
+<b>注意</b>： 通常，“live” ebuild（请参阅<a href="./ebuild-writing/ebuild-phase-functions/src_unpack/version-control-system-sources.md">版本控制系统（VCS）源</a>）不会指定 <code><pre>KEYWORDS</pre></code> 变量，也不会为其分配空字符串。
 </div>
 
 ## 平等的可视性要求

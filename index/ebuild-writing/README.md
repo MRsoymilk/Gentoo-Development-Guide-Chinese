@@ -12,7 +12,7 @@
 - [输出信息](./messages.md)
 - [变量](./variables.md)
 - [使用 Eclass](./using-eclasses.md)
-- [Ebuild 函数](./ebuild-phase-functions/README.md)
+- [Ebuild 阶段函数](./ebuild-phase-functions/README.md)
   - [pkg_pretend](./ebuild-phase-functions/pkg_pretend.md)
   - [pkg_nofetch](./ebuild-phase-functions/pkg_nofetch.md)
   - [pkg_setup](./ebuild-phase-functions/pkg_setup.md)

@@ -27,7 +27,7 @@
 <b>注意</b>：<code><pre>configure.in</pre></code>名称曾是以前的标准。但是，GNU文档现在建议使用<code><pre>configure.ac</pre></code>，因为在处理该程序时会更明显地使用哪个程序。这些文件具有相同的用途，并且具有相同的格式 —— 唯一的区别是名称。
 </div>
 
-你可能会发现在各个阶段功能中都使用了自动工具。 [src_prepare](./../ebuild-writing/ebuild-functions/src_prepare/README.md)函数是在配置和编译之前处理源代码的最合适的位置。特别是，在[src_configure](./../ebuild-writing/ebuild-functions/src_configure/README.md)之前调用`src_prepare`，这通常希望`configure`脚本存在。
+你可能会发现在各个阶段功能中都使用了自动工具。 [src_prepare](./../ebuild-writing/ebuild-phase-functions/src_prepare/README.md)函数是在配置和编译之前处理源代码的最合适的位置。特别是，在[src_configure](./../ebuild-writing/ebuild-phase-functions/src_configure/README.md)之前调用`src_prepare`，这通常希望`configure`脚本存在。
 
 `autoreconf` 工具可以根据需要运行 `autoconf`（以及 `automake`，`autoheader`，`aclocal`，`autopoint` 和 `libtoolize`）。有时可以如此操作。一些软件包附带了一个名为 `autogen.sh` 的 shell 脚本，该脚本执行相同的操作（这与 `autogen` *不*相关）。 autotools.eclass 包含独立工具的帮助程序函数，其名称如 `eautoconf` 和 `eautomake`。
 

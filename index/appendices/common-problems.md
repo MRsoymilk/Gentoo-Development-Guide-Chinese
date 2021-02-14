@@ -35,7 +35,7 @@
 出于安全原因，动态链接的 setXid 应用程序在链接时不应使用惰性绑定。如果显示此消息，则有两种选择：
 
 - 链接时，修改软件包的 Makefile（或等效文件）以使用`-Wl,-z,now`。此解决方案是首选。
-- 使用`append-ldflags`（请参阅[添加其他标志](./../ebuild-writing/ebuild-functions/src_compile/configuring-build-environment.md)）立即添加`-Wl,-z,now`。这将影响*所有*已安装的二进制文件，而不仅仅是 setXid 二进制文件。
+- 使用`append-ldflags`（请参阅[添加其他标志](./../ebuild-writing/ebuild-phase-functions/src_compile/configuring-build-environment.md)）立即添加`-Wl,-z,now`。这将影响*所有*已安装的二进制文件，而不仅仅是 setXid 二进制文件。
 
 ### 质量检查通知：ECLASS foo 被非法继承
 

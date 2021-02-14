@@ -68,12 +68,12 @@ Ebuild 使用`Tab`缩进，每个`Tab`代表四个位置。请参阅[Ebuild 文�
 `src_install`函数：Portage 将调用此函数*安装*软件包。这里有一点微妙之处 —— 我们必须直接安装到`${D}`变量指定的特殊位置（而不是直接安装到实时文件系统中）（Portage 对此进行了设置 —— 请参阅[安装目标](./general-concepts/install-destinations.md)和[沙盒](./general-concepts/sandbox.md)）。
 
 <div class="alert alert-note">
-<b>注意</b>： 规范的安装方法是<code><pre>emake DESTDIR="${D}" install</pre></code> 。这种方法支持任何正确编写的标准 <code><pre>Makefile</pre></code>文件。如果提示沙盒错误，请参阅 <a href="./ebuild-writing/ebuild-functions/src_install/README.md">src_install</a> 以了解如何进行手动安装。
+<b>注意</b>： 规范的安装方法是<code><pre>emake DESTDIR="${D}" install</pre></code> 。这种方法支持任何正确编写的标准 <code><pre>Makefile</pre></code>文件。如果提示沙盒错误，请参阅 <a href="./ebuild-writing/ebuild-phase-functions/src_install/README.md">src_install</a> 以了解如何进行手动安装。
 </div>
 
 `dodoc`: 将文件安装到`/usr/share/doc`相关部分的辅助函数。
 
-Ebuild 可以定义其他函数（请参阅 `Ebuild 函数`）。在所有情况下，Portage 提供了一个合理的默认实现，该实现通常会做“正确的事情”。此处不需要定义 `src_unpack` 和 `src_compile` 函数，例如 —— `src_unpack` 函数用于解压缩压缩文件或为源文件打补丁，但这种情况下默认实现做了我们需要的一切。同样，默认的 `src_compile` 函数将调用`make`的包装：`emake`。
+Ebuild 可以定义其他函数（请参阅 `Ebuild 阶段函数`）。在所有情况下，Portage 提供了一个合理的默认实现，该实现通常会做“正确的事情”。此处不需要定义 `src_unpack` 和 `src_compile` 函数，例如 —— `src_unpack` 函数用于解压缩压缩文件或为源文件打补丁，但这种情况下默认实现做了我们需要的一切。同样，默认的 `src_compile` 函数将调用`make`的包装：`emake`。
 
 <div class="alert alert-note">
 <b>注意</b>： 以前，必须在每个命令之后使用<code><pre>|| die</pre></code>构造以检查错误。在 EAPI 4 后，这不再是必需的 —— 如果发生故障，Portage 提供的函数将默认处理。
@@ -149,7 +149,7 @@ src_configure() {
 }
 ```
 
-请注意`${FILESDIR}/${P}-destdir.patch` —— 指的是 `detox-1.1.0-destdir.patch`，它位于 Gentoo 存储库 `files/` 的子目录中。较大的补丁程序文件必须位于开发人员空间：位于 `dev.gentoo.org` 而不是位于 `files/`或镜像中 —— 请参阅[Gentoo 镜像](./general-concepts/mirrors.md)和 [使用 epatch 和 eapply 打补丁](./ebuild-writing/ebuild-functions/src_prepare/patching-with-epatch-and-eapply.md)。
+请注意`${FILESDIR}/${P}-destdir.patch` —— 指的是 `detox-1.1.0-destdir.patch`，它位于 Gentoo 存储库 `files/` 的子目录中。较大的补丁程序文件必须位于开发人员空间：位于 `dev.gentoo.org` 而不是位于 `files/`或镜像中 —— 请参阅[Gentoo 镜像](./general-concepts/mirrors.md)和 [使用 epatch 和 eapply 打补丁](./ebuild-writing/ebuild-phase-functions/src_prepare/patching-with-epatch-and-eapply.md)。
 
 当 `src_prepare` 段落被覆盖时，必须确保 `eapply_user` 被调用。
 

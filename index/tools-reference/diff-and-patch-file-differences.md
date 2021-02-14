@@ -12,6 +12,6 @@
 
 对于主 tree 中的补丁，请使用统一（`-u`）格式。通常，这也是向上游发送补丁程序时使用的最佳格式 —— 但是，有时可能会要求你提供上下文差异，它们比统一性更可移植（但不能像处理干净冲突那样）。在这种情况下，请使用`-c` 而不是`-u`。
 
-要应用补丁，请使用 `patch -pX < whatever.patch`，其中 `X` 的数字代表必须删除的路径组件的数量（通常为 `0`或` 1`）。在 ebuild 中，从 EAPI=6 开始请使用 `epatch`函数 或 `eapply`函数 —— 请参阅 [使用 epatch 和 eapply 进行修补](./../ebuild-writing/ebuild-functions/src_prepare/patching-with-epatch-and-eapply.md)。
+要应用补丁，请使用 `patch -pX < whatever.patch`，其中 `X` 的数字代表必须删除的路径组件的数量（通常为 `0`或` 1`）。在 ebuild 中，从 EAPI=6 开始请使用 `epatch`函数 或 `eapply`函数 —— 请参阅 [使用 epatch 和 eapply 进行修补](./../ebuild-writing/ebuild-phase-functions/src_prepare/patching-with-epatch-and-eapply.md)。
 
 diff-1 和 patch-1 手册页提供了更多信息。

@@ -48,7 +48,7 @@ ebuild 应该以`name-version.ebuild`的形式命名。
 
 打包源存储库的快照时，有两种常用格式。第一个将快照视为以前版本的补丁，因此 ebuild 版本的格式为`$(last-released-version)_pYYYYMMDD`。或者，可以将快照视为即将发布版本的预发布版本，通常在预期发布但尚未发布时使用。格式为`$(upcoming-version)_preYYYYMMDD`。
 
-所谓的*实时* ebuild（请参阅 [src_unpack 操作](./ebuild-functions/src_unpack/README.md)）的策略是使用 `9999` 作为版本（或作为最后一个版本组件）。
+所谓的*实时* ebuild（请参阅 [src_unpack 操作](./ebuild-phase-functions/src_unpack/README.md)）的策略是使用 `9999` 作为版本（或作为最后一个版本组件）。
 
 ## 二进制包
 
